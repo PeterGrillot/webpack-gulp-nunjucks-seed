@@ -1,0 +1,337 @@
+.content-block__row {
+	@include clearfix;
+}
+
+// Color Blocks
+.color-block {
+	color: $white;
+	img.color-block__image {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		object-fit: cover;
+	}
+	p.color-block__feature {
+		padding-left: 2rem;
+		position: relative;
+		&:before {
+			font-family: FontAwesome;
+			content: "\f073";
+			position: absolute;
+			left: 0;
+		}
+		&.join:before {
+			content: "\f007";
+		}
+		&.help:before {
+			content: "\f1cd";
+		}
+	}
+	&.color-block--blue {
+		background-color: $nacac_light-blue;
+	}
+	&.color-block--grey {
+		background-color: $nacac_light-grey;
+	}
+	h2.color-block__title {
+		//@include condensed-uppercase-bold;
+	}
+	p.color-block__info {}
+	p.color-block__text {}
+}
+
+.color-block {
+	width: 50%;
+	float: left;
+	position: relative;
+	min-height: 36rem;
+	overflow: hidden;
+	&:nth-child(odd) .color-block__content {
+		left: inherit;
+		right: 0;
+		float: right;
+	}
+	.color-block__content {
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		right: inherit;
+		padding: 3rem;
+	}
+	&.color-block--full {
+		width: 100%;
+		.color-block__content {
+			text-align: center;
+			.color-block__feature {
+				display: inline;
+			}
+			img.color-block__image {
+				left: 0;
+			}
+		}
+	}
+	&.color-block--wide .color-block__content {
+		@include break(min, $screen-sm-min) {
+			width: $container-sm-half;
+		}
+		@include break(min, $screen-md-min) {
+			width: $container-md-half;
+		}
+		@include break(min, $screen-lg-min) {
+			width: $container-lg-half;
+		}
+	}
+}
+
+// Card-block
+.card-block {
+	background-color: $nacac_grey;
+	margin: 2rem 1rem;
+	padding: 0;
+	color: $white;
+	-webkit-transform: translateZ(0);
+	-webkit-transform: translateY(0);
+	transition: $transition--all;
+	cursor: pointer;
+	&:hover {
+		position: relative;
+		box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+		@include prefix(animation-name, floating, webkit);
+		@include prefix(animation-duration, 3s, webkit);
+		@include prefix(animation-iteration-count, infinite, webkit);
+		@include prefix(animation-timing-function, ease-in-out, webkit);
+		@include keyframes(floating) {
+			from {
+				transform: translate(0, 0px);
+			}
+			65% {
+				transform: translate(0, -6px);
+			}
+			to {
+				transform: translate(0, 0px);
+			}
+		}
+		img {}
+	}
+}
+
+.card-block__header {
+	position: relative;
+	height: 18rem;
+	overflow: hidden;
+	display: table;
+	text-align: center;
+	width: 100%;
+	padding: 0 1rem;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	h2 {
+		display: table-cell;
+		vertical-align: middle;
+		height: 18rem;
+		margin: 0;
+		color: $white;
+		font-size: 1.5em;
+		line-height: 4.2rem;
+	}
+	img {
+		top: 0;
+		left: 0;
+		transition: $transition--all;
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		@include prefix(filter, brightness(80%), webkit);
+		&:hover {
+			@include prefix(filter, brightness(100%), webkit);
+		}
+	}
+}
+
+.card-block__text {
+	flex: 1;
+	padding: 2rem;
+	p {
+		// font-weight: 100;
+	}
+}
+
+.card-block__footer {
+	padding: 0 2rem 2rem;
+	a.btn {
+		display: inline-block;
+	}
+}
+
+.member-block {
+	margin: 4rem 0;
+	> img {
+		border-radius: 50%;
+		max-width: 16rem;
+		margin: 4rem auto;
+		display: block;
+	}
+	.member-block__profile--image {}
+	.member-block__profile--icon {
+		border: 0.3rem solid $nacac_purple;
+	}
+	.member-block__header {
+		border-bottom: 1px solid $nacac_border-lightgrey;
+		span {
+			border-right: 1px solid $nacac_border-lightgrey;
+			display: inline-block;
+			padding: 1rem;
+		}
+	}
+	.member-block__title {
+		@include serif-italic;
+		margin: 0;
+	}
+	.member-block__name {
+		margin: 1rem 0;
+	}
+	.member-block__content {
+		padding: 0 4rem;
+	}
+	.member-block__footer {
+		padding: 4rem;
+	}
+}
+
+.number-block {
+	text-align: center;
+	.number-block__numerals {
+		color: $nacac_orange;
+		font-size: 7rem;
+		margin: 3rem;
+		font-family: $condensed;
+		position: relative;
+		&:after {
+			content: "";
+			width: 12rem;
+			height: 12rem;
+			border: 2px dotted $lighter-orange;
+			position: absolute;
+			margin: 0 auto;
+			display: block;
+			border-radius: 50%;
+			top: 50%;
+			left: 50%;
+			margin-left: -6rem;
+			margin-top: -6rem;
+		}
+	}
+	.number-block-block__text p {
+		font-size: 2.4rem;
+		line-height: 2.8rem;
+	}
+}
+
+// added for fairs homepage
+.article__row.fairs-infographic {
+	padding-top: 8rem;
+	padding-bottom: 10rem;
+	color: #fff;
+	background: url(/images/fair/numbers-bg.jpg) no-repeat 50% 50%;
+	background-size: cover;
+	.number-block {
+		.number-block__numerals {
+			color: #fff;
+			&:after {
+				border-color: #fff;
+			}
+		}
+		.number-block-block__text {
+			p {
+				font-size: 1.8rem;
+				line-height: 1.5;
+			}
+		}
+	}
+}
+
+.figure-block {
+	margin: 0;
+	margin-top: 2rem;
+	.figure-block__image {
+		width: 100%;
+	}
+}
+
+.video-block {
+	margin: 0;
+	margin-top: 2rem;
+	.video-block__frame {
+		position: relative;
+		padding-bottom: 56.25%;
+		// padding-top: 25px;
+		height: 0;
+	}
+	.video-block__frame iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.block--dynamic {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	float: left;
+}
+
+@for $i from 1 through 4 {
+	.block--dynamic:first-child:nth-last-child(#{$i}),
+	.block--dynamic:first-child:nth-last-child(#{$i}) ~ .block--dynamic {
+		width: 100% / $i;
+	}
+}
+
+
+/*
+██████╗ ██╗  ██╗ ██████╗ ███╗   ██╗███████╗
+██╔══██╗██║  ██║██╔═══██╗████╗  ██║██╔════╝
+██████╔╝███████║██║   ██║██╔██╗ ██║█████╗  
+██╔═══╝ ██╔══██║██║   ██║██║╚██╗██║██╔══╝  
+██║     ██║  ██║╚██████╔╝██║ ╚████║███████╗
+╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+*/
+
+@include break(max, $screen-sm-max) {
+	.color-block--wide,
+	.color-block--half {
+		width: 100%;
+		float: none;
+	}
+	.color-block {
+		color: $white;
+		img.color-block__image {
+			position: absolute;
+		}
+	}
+	@for $i from 1 through 4 {
+		.block--dynamic:first-child:nth-last-child(#{$i}),
+		.block--dynamic:first-child:nth-last-child(#{$i}) ~ .block--dynamic {
+			width: 100%;
+		}
+	}
+}
+
+
+/*
+██████╗ ███████╗███████╗██╗  ██╗████████╗ ██████╗ ██████╗ 
+██╔══██╗██╔════╝██╔════╝██║ ██╔╝╚══██╔══╝██╔═══██╗██╔══██╗
+██║  ██║█████╗  ███████╗█████╔╝    ██║   ██║   ██║██████╔╝
+██║  ██║██╔══╝  ╚════██║██╔═██╗    ██║   ██║   ██║██╔═══╝ 
+██████╔╝███████╗███████║██║  ██╗   ██║   ╚██████╔╝██║     
+╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝     
+														  
+*/
+
+@include break(min, $screen-md-min) {}

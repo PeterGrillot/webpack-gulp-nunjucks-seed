@@ -1,0 +1,166 @@
+.announcement__header {
+	border-bottom: 1px solid $nacac_border-grey;
+	color: $nacac_medium_grey;
+	margin-top: -3rem;
+	p {
+		display: inline-block;
+		padding: 1.8rem 2rem;
+		border-right: 1px solid $nacac_border-grey;
+		font-size: 1.4rem;
+		font-weight: 100;
+		margin: 0;
+		text-transform: uppercase;
+	}
+	i {
+		margin-left: -0.4rem;
+		margin-right: 0.4rem;
+		@include prefix(transform, rotate(-20deg), webkit);
+	}
+}
+
+.announcement__row {
+	h2 {
+		text-align: left;
+	}
+}
+
+.listing__entry,
+.resource__entry,
+.calendar__content {
+	margin-bottom: 3rem;
+	a {
+		@include sans-uppercase-normal;
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0.5rem;
+			right: -1.4rem;
+			width: 0;
+			height: 0;
+			border-top: 0.6rem solid transparent;
+			border-bottom: 0.6rem solid transparent;
+			border-left: 0.6rem solid;
+		}
+	}
+}
+
+.calendar__entry {
+	@include clearfix;
+}
+
+.calendar__content {
+	float: right;
+	width: calc(100% - 12rem);
+}
+
+.calendar__date {
+	@include sans-uppercase-normal;
+	color: $white;
+	float: left;
+	text-align: center;
+	margin-top: 1.8rem;
+	width: 10rem;
+	height: 10rem;
+	background-color: $nacac_burgundy;
+	border-radius: 100%;
+	.calendar__day {
+		padding-bottom: 1.2rem;
+		margin: 0 auto;
+		margin-top: 2.4rem;
+		margin-bottom: 0.6rem;
+		border-bottom: 1px solid;
+		width: 5rem;
+		font-size: 4.4rem;
+	}
+	.calendar__month {
+		margin-top: 0.4rem;
+		font-weight: 200;
+	}
+}
+
+.press-release__footer{
+	border-top: 1px dotted;
+	margin-top: 2rem;
+	padding-top: 2rem;
+	@include clearfix;
+	.press-release__block{
+		float: left;
+		width: 50%;
+		padding-right: 0.8rem;
+		padding-bottom: 1.6rem;
+		span{
+			display: inline-block;
+		}
+		.press-release__name{
+			font-weight: bold;
+		}
+		.press-release__title{
+
+		}
+		.press-release__number{
+
+		}
+
+	}
+	
+}
+/*
+██████╗ ██╗  ██╗ ██████╗ ███╗   ██╗███████╗
+██╔══██╗██║  ██║██╔═══██╗████╗  ██║██╔════╝
+██████╔╝███████║██║   ██║██╔██╗ ██║█████╗  
+██╔═══╝ ██╔══██║██║   ██║██║╚██╗██║██╔══╝  
+██║     ██║  ██║╚██████╔╝██║ ╚████║███████╗
+╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+*/
+
+@include break(max, $screen-sm-max) {
+	.calendar__date {
+		width: 6rem;
+		height: 6rem;
+		margin-top: 3rem;
+		.calendar__day {
+			padding-bottom: 0.2rem;
+			margin: 0 auto;
+			margin-top: 0.4rem;
+			margin-bottom: 0.2rem;
+			border-bottom: 1px solid;
+			width: 4rem;
+			font-size: 2.4rem;
+		}
+		.calendar__month {
+			margin-top: 0.4rem;
+			font-weight: 200;
+			font-size: 1.4rem;
+		}
+	}
+	.calendar__content {
+		width: calc(100% - 7rem);
+	}
+}
+
+
+/*
+██████╗ ███████╗███████╗██╗  ██╗████████╗ ██████╗ ██████╗ 
+██╔══██╗██╔════╝██╔════╝██║ ██╔╝╚══██╔══╝██╔═══██╗██╔══██╗
+██║  ██║█████╗  ███████╗█████╔╝    ██║   ██║   ██║██████╔╝
+██║  ██║██╔══╝  ╚════██║██╔═██╗    ██║   ██║   ██║██╔═══╝ 
+██████╔╝███████╗███████║██║  ██╗   ██║   ╚██████╔╝██║     
+╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝     
+														  
+*/
+
+@include break(min, $screen-md-min) {
+	.listing__block {
+		position: relative;
+		&:after {
+			content: "";
+			top: 11.5rem;
+			position: absolute;
+			right: 1rem;
+			height: calc(100% - 11.5rem);
+			width: 1px;
+			background-color: $nacac_border-grey;
+		}
+	}
+}

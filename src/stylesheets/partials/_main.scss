@@ -1,0 +1,247 @@
+// Overlay
+.screen__overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	pointer-events: none;
+	transition: $transition--opacity;
+	@include prefix(transition-timing-function, cubic-bezier(0.7, 0, 0.3, 1), webkit);
+	&.screen__overlay--soft {
+		background: rgba(0, 0, 0, 0.33);
+	}
+	&.screen__overlay--hard {
+		z-index: 2;
+		background: rgba(0, 0, 0, 0.80);
+	}
+}
+
+@include break(min, $screen-sm-min) {
+	.no-transitions {
+		transition: none !important;
+	}
+}
+
+body.body--freeze {
+	overflow: hidden;
+}
+
+.screen__overlay--on {
+	opacity: 1;
+}
+
+.pointer--disabled{
+	pointer-events: none;
+}
+
+// B-lazy
+.b-lazy {
+	transition: opacity 200ms ease-in-out;
+	max-width: 100%;
+	opacity: 0;
+}
+.b-lazy.b-loaded {
+	opacity: 1;
+}
+
+// Articles
+.article__row {
+	padding-top: $content-padding;
+	padding-bottom: $content-padding;
+	&.content__row {
+		padding-top: 0;
+	}
+	&.article--top-border {
+		border-top: 1px solid $nacac_border-lightgrey;
+	}
+}
+.article__row.hero--none {
+		padding-top: 7rem;
+		margin-top: 5rem;
+		> .article__row:nth-child{
+			padding-top: 0;
+		}
+	}
+.article--white {
+	background-color: $white;
+}
+
+.article--lightgrey {
+	background-color: $nacac_bg-light-grey;
+}
+
+.article--bluegrey {
+	background-color: $nacac_bg-blue-grey;
+}
+// needed for inverse breadcrumb wrapper
+.article--blue {
+	background-color: $nacac_light-blue;
+}
+
+.article__header,
+.section__header {
+	text-align: center;
+	.section__row [class*="col-"] & {
+		text-align: left;
+	}
+	.btn {
+		margin: 2rem 0;
+	}
+	p {
+		padding-top: $p-spacing;
+		padding-bottom: $p-spacing;
+		& + p { // this isn't the most elegant solution, but I don't want to upset other templates
+			margin-top: -2rem;
+			padding-top: 0;
+		}
+	}
+}
+
+.section__row {
+	@include clearfix;
+	border-bottom: 1px solid $nacac_border-lightgrey;
+	padding-bottom: $content-padding;
+	&:last-child {
+		border-bottom: none;
+	}
+	&.section__row--no-border{
+		border-bottom:none;
+	}
+}
+
+.flexbox__row {
+	display: flex;
+}
+
+.flexbox__column {
+	display: flex;
+	flex-direction: column;
+}
+
+// Backgrounds
+.background--orange {
+	background-color: $nacac-orange;
+	color: $white;
+	a:hover {
+		color: $white;
+	}
+}
+
+.background--light-blue {
+	background-color: $nacac_light-blue;
+	color: $white;
+}
+
+.background--blue {
+	background-color: $nacac_blue;
+	color: $white;
+	a:hover {
+		color: $white;
+	}
+}
+
+.background--burgundy {
+	background-color: $nacac_burgundy;
+	color: $white;
+	a:hover {
+		color: $white;
+	}
+}
+
+.background--purple {
+	background-color: $nacac_purple;
+	color: $white;
+	a:hover {
+		color: $white;
+	}
+}
+
+.background--green {
+	background-color: $nacac_green;
+	color: $white;
+	a:hover {
+		color: $white;
+	}
+}
+
+.background--light-grey {
+	background-color: $nacac_bg-light-grey;
+}
+
+.background--grey {
+	background-color: $nacac_light-grey;
+}
+
+.col--border{
+	position:relative;
+	&:after{
+		border-right: 1px solid $nacac_border-lightgrey;
+		height: calc(100% - 9rem);
+		content: "";
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+}
+/*
+██████╗ ██╗  ██╗ ██████╗ ███╗   ██╗███████╗
+██╔══██╗██║  ██║██╔═══██╗████╗  ██║██╔════╝
+██████╔╝███████║██║   ██║██╔██╗ ██║█████╗  
+██╔═══╝ ██╔══██║██║   ██║██║╚██╗██║██╔══╝  
+██║     ██║  ██║╚██████╔╝██║ ╚████║███████╗
+╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+*/
+
+@include break(max, $screen-sm-max) {
+	html {
+		font-size: 9px;
+	}
+	.container {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+	main{
+		padding-top: 7rem;
+		margin-top: 1rem;
+	}
+	.article__row.hero--none {
+		padding-top: 0;
+		margin-top: 4rem;
+	}
+	.flexbox__row {
+		display: block;
+	}
+	.flexbox__column {
+		display: block;
+	}
+	.article__row {
+		header {
+			h1 {
+				line-height: 5rem;
+				margin-top: 2rem;
+			}
+		}
+		a.btn {
+			max-width: 30rem;
+			margin: auto;
+			display: block;
+			white-space: normal;
+		}
+	}
+}
+
+
+/*
+██████╗ ███████╗███████╗██╗  ██╗████████╗ ██████╗ ██████╗ 
+██╔══██╗██╔════╝██╔════╝██║ ██╔╝╚══██╔══╝██╔═══██╗██╔══██╗
+██║  ██║█████╗  ███████╗█████╔╝    ██║   ██║   ██║██████╔╝
+██║  ██║██╔══╝  ╚════██║██╔═██╗    ██║   ██║   ██║██╔═══╝ 
+██████╔╝███████╗███████║██║  ██╗   ██║   ╚██████╔╝██║     
+╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝     
+														  
+*/
+
+@include break(min, $screen-md-min) {}

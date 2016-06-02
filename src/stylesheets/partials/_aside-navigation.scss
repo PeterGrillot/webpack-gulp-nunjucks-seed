@@ -1,0 +1,84 @@
+.aside-navigation {
+	h3 {
+		@include sans-uppercase-normal;
+		// padding: 1rem;
+		color: $nacac_light-blue;
+		// font-size: 2rem;
+	}
+	ul{
+		list-style: none;
+		li{
+			a{
+				padding: 1rem;
+			}
+			> ul{
+				margin-left: 20px;
+			}
+		}
+	}
+	.aside-navigation__button {
+		display: block;
+		color: $text_slate;
+		@include sans-light;
+		cursor: pointer;
+		&:hover {
+			color: $nacac_blue;
+		}
+		&.aside-navigation__button--active {
+			background-color: $nacac_light-blue;
+			color: $white;
+			border-radius: 0.4rem;
+		}
+	}
+}
+
+
+/*
+██████╗ ██╗  ██╗ ██████╗ ███╗   ██╗███████╗
+██╔══██╗██║  ██║██╔═══██╗████╗  ██║██╔════╝
+██████╔╝███████║██║   ██║██╔██╗ ██║█████╗  
+██╔═══╝ ██╔══██║██║   ██║██║╚██╗██║██╔══╝  
+██║     ██║  ██║╚██████╔╝██║ ╚████║███████╗
+╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+*/
+
+
+@include break(max, $screen-sm-max) {
+	.aside-navigation {
+		width: 100%;
+	}
+}
+
+
+/*
+██████╗ ███████╗███████╗██╗  ██╗████████╗ ██████╗ ██████╗ 
+██╔══██╗██╔════╝██╔════╝██║ ██╔╝╚══██╔══╝██╔═══██╗██╔══██╗
+██║  ██║█████╗  ███████╗█████╔╝    ██║   ██║   ██║██████╔╝
+██║  ██║██╔══╝  ╚════██║██╔═██╗    ██║   ██║   ██║██╔═══╝ 
+██████╔╝███████╗███████║██║  ██╗   ██║   ╚██████╔╝██║     
+╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝     
+														  
+*/
+
+@include break(min, $screen-md-min) {
+	.aside-navigation {
+		opacity: 1;
+		transition: $transition--opacity;
+		&.aside-navigation--sticky {
+			position: fixed;
+			top: 12rem;
+			width: 26.4rem;
+		}
+		&.aside-navigation--hide {
+			opacity: 0;
+			transition: opacity 100ms ease;
+		}
+	}
+}
+
+@include break(min, $screen-md-min, max, $screen-md-max) {
+	.aside-navigation.aside-navigation--sticky {
+		width: 21.25rem;
+	}
+}
+

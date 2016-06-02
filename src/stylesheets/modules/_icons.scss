@@ -1,0 +1,1440 @@
+@mixin icon($iconName) {
+	font-family: $icons;
+	@if $iconName == 'fa-glass' {
+		content: '\f000';
+	}
+	@if $iconName == 'fa-music' {
+		content: '\f001';
+	}
+	@if $iconName == 'fa-search' {
+		content: '\f002';
+	}
+	@if $iconName == 'fa-envelope-o' {
+		content: '\f003';
+	}
+	@if $iconName == 'fa-heart' {
+		content: '\f004';
+	}
+	@if $iconName == 'fa-star' {
+		content: '\f005';
+	}
+	@if $iconName == 'fa-star-o' {
+		content: '\f006';
+	}
+	@if $iconName == 'fa-user' {
+		content: '\f007';
+	}
+	@if $iconName == 'fa-film' {
+		content: '\f008';
+	}
+	@if $iconName == 'fa-th-large' {
+		content: '\f009';
+	}
+	@if $iconName == 'fa-th' {
+		content: '\f00a';
+	}
+	@if $iconName == 'fa-th-list' {
+		content: '\f00b';
+	}
+	@if $iconName == 'fa-check' {
+		content: '\f00c';
+	}
+	@if $iconName == 'fa-times' {
+		content: '\f00d';
+	}
+	@if $iconName == 'fa-search-plus' {
+		content: '\f00e';
+	}
+	@if $iconName == 'fa-search-minus' {
+		content: '\f010';
+	}
+	@if $iconName == 'fa-power-off' {
+		content: '\f011';
+	}
+	@if $iconName == 'fa-signal' {
+		content: '\f012';
+	}
+	@if $iconName == 'fa-cog' {
+		content: '\f013';
+	}
+	@if $iconName == 'fa-trash-o' {
+		content: '\f014';
+	}
+	@if $iconName == 'fa-home' {
+		content: '\f015';
+	}
+	@if $iconName == 'fa-file-o' {
+		content: '\f016';
+	}
+	@if $iconName == 'fa-clock-o' {
+		content: '\f017';
+	}
+	@if $iconName == 'fa-road' {
+		content: '\f018';
+	}
+	@if $iconName == 'fa-download' {
+		content: '\f019';
+	}
+	@if $iconName == 'fa-arrow-circle-o-down' {
+		content: '\f01a';
+	}
+	@if $iconName == 'fa-arrow-circle-o-up' {
+		content: '\f01b';
+	}
+	@if $iconName == 'fa-inbox' {
+		content: '\f01c';
+	}
+	@if $iconName == 'fa-play-circle-o' {
+		content: '\f01d';
+	}
+	@if $iconName == 'fa-repeat' {
+		content: '\f01e';
+	}
+	@if $iconName == 'fa-refresh' {
+		content: '\f021';
+	}
+	@if $iconName == 'fa-list-alt' {
+		content: '\f022';
+	}
+	@if $iconName == 'fa-lock' {
+		content: '\f023';
+	}
+	@if $iconName == 'fa-flag' {
+		content: '\f024';
+	}
+	@if $iconName == 'fa-headphones' {
+		content: '\f025';
+	}
+	@if $iconName == 'fa-volume-off' {
+		content: '\f026';
+	}
+	@if $iconName == 'fa-volume-down' {
+		content: '\f027';
+	}
+	@if $iconName == 'fa-volume-up' {
+		content: '\f028';
+	}
+	@if $iconName == 'fa-qrcode' {
+		content: '\f029';
+	}
+	@if $iconName == 'fa-barcode' {
+		content: '\f02a';
+	}
+	@if $iconName == 'fa-tag' {
+		content: '\f02b';
+	}
+	@if $iconName == 'fa-tags' {
+		content: '\f02c';
+	}
+	@if $iconName == 'fa-book' {
+		content: '\f02d';
+	}
+	@if $iconName == 'fa-bookmark' {
+		content: '\f02e';
+	}
+	@if $iconName == 'fa-print' {
+		content: '\f02f';
+	}
+	@if $iconName == 'fa-camera' {
+		content: '\f030';
+	}
+	@if $iconName == 'fa-font' {
+		content: '\f031';
+	}
+	@if $iconName == 'fa-bold' {
+		content: '\f032';
+	}
+	@if $iconName == 'fa-italic' {
+		content: '\f033';
+	}
+	@if $iconName == 'fa-text-height' {
+		content: '\f034';
+	}
+	@if $iconName == 'fa-text-width' {
+		content: '\f035';
+	}
+	@if $iconName == 'fa-align-left' {
+		content: '\f036';
+	}
+	@if $iconName == 'fa-align-center' {
+		content: '\f037';
+	}
+	@if $iconName == 'fa-align-right' {
+		content: '\f038';
+	}
+	@if $iconName == 'fa-align-justify' {
+		content: '\f039';
+	}
+	@if $iconName == 'fa-list' {
+		content: '\f03a';
+	}
+	@if $iconName == 'fa-outdent' {
+		content: '\f03b';
+	}
+	@if $iconName == 'fa-indent' {
+		content: '\f03c';
+	}
+	@if $iconName == 'fa-video-camera' {
+		content: '\f03d';
+	}
+	@if $iconName == 'fa-picture-o' {
+		content: '\f03e';
+	}
+	@if $iconName == 'fa-pencil' {
+		content: '\f040';
+	}
+	@if $iconName == 'fa-map-marker' {
+		content: '\f041';
+	}
+	@if $iconName == 'fa-adjust' {
+		content: '\f042';
+	}
+	@if $iconName == 'fa-tint' {
+		content: '\f043';
+	}
+	@if $iconName == 'fa-pencil-square-o' {
+		content: '\f044';
+	}
+	@if $iconName == 'fa-share-square-o' {
+		content: '\f045';
+	}
+	@if $iconName == 'fa-check-square-o' {
+		content: '\f046';
+	}
+	@if $iconName == 'fa-arrows' {
+		content: '\f047';
+	}
+	@if $iconName == 'fa-step-backward' {
+		content: '\f048';
+	}
+	@if $iconName == 'fa-fast-backward' {
+		content: '\f049';
+	}
+	@if $iconName == 'fa-backward' {
+		content: '\f04a';
+	}
+	@if $iconName == 'fa-play' {
+		content: '\f04b';
+	}
+	@if $iconName == 'fa-pause' {
+		content: '\f04c';
+	}
+	@if $iconName == 'fa-stop' {
+		content: '\f04d';
+	}
+	@if $iconName == 'fa-forward' {
+		content: '\f04e';
+	}
+	@if $iconName == 'fa-fast-forward' {
+		content: '\f050';
+	}
+	@if $iconName == 'fa-step-forward' {
+		content: '\f051';
+	}
+	@if $iconName == 'fa-eject' {
+		content: '\f052';
+	}
+	@if $iconName == 'fa-chevron-left' {
+		content: '\f053';
+	}
+	@if $iconName == 'fa-chevron-right' {
+		content: '\f054';
+	}
+	@if $iconName == 'fa-plus-circle' {
+		content: '\f055';
+	}
+	@if $iconName == 'fa-minus-circle' {
+		content: '\f056';
+	}
+	@if $iconName == 'fa-times-circle' {
+		content: '\f057';
+	}
+	@if $iconName == 'fa-check-circle' {
+		content: '\f058';
+	}
+	@if $iconName == 'fa-question-circle' {
+		content: '\f059';
+	}
+	@if $iconName == 'fa-info-circle' {
+		content: '\f05a';
+	}
+	@if $iconName == 'fa-crosshairs' {
+		content: '\f05b';
+	}
+	@if $iconName == 'fa-times-circle-o' {
+		content: '\f05c';
+	}
+	@if $iconName == 'fa-check-circle-o' {
+		content: '\f05d';
+	}
+	@if $iconName == 'fa-ban' {
+		content: '\f05e';
+	}
+	@if $iconName == 'fa-arrow-left' {
+		content: '\f060';
+	}
+	@if $iconName == 'fa-arrow-right' {
+		content: '\f061';
+	}
+	@if $iconName == 'fa-arrow-up' {
+		content: '\f062';
+	}
+	@if $iconName == 'fa-arrow-down' {
+		content: '\f063';
+	}
+	@if $iconName == 'fa-share' {
+		content: '\f064';
+	}
+	@if $iconName == 'fa-expand' {
+		content: '\f065';
+	}
+	@if $iconName == 'fa-compress' {
+		content: '\f066';
+	}
+	@if $iconName == 'fa-plus' {
+		content: '\f067';
+	}
+	@if $iconName == 'fa-minus' {
+		content: '\f068';
+	}
+	@if $iconName == 'fa-asterisk' {
+		content: '\f069';
+	}
+	@if $iconName == 'fa-exclamation-circle' {
+		content: '\f06a';
+	}
+	@if $iconName == 'fa-gift' {
+		content: '\f06b';
+	}
+	@if $iconName == 'fa-leaf' {
+		content: '\f06c';
+	}
+	@if $iconName == 'fa-fire' {
+		content: '\f06d';
+	}
+	@if $iconName == 'fa-eye' {
+		content: '\f06e';
+	}
+	@if $iconName == 'fa-eye-slash' {
+		content: '\f070';
+	}
+	@if $iconName == 'fa-exclamation-triangle' {
+		content: '\f071';
+	}
+	@if $iconName == 'fa-plane' {
+		content: '\f072';
+	}
+	@if $iconName == 'fa-calendar' {
+		content: '\f073';
+	}
+	@if $iconName == 'fa-random' {
+		content: '\f074';
+	}
+	@if $iconName == 'fa-comment' {
+		content: '\f075';
+	}
+	@if $iconName == 'fa-magnet' {
+		content: '\f076';
+	}
+	@if $iconName == 'fa-chevron-up' {
+		content: '\f077';
+	}
+	@if $iconName == 'fa-chevron-down' {
+		content: '\f078';
+	}
+	@if $iconName == 'fa-retweet' {
+		content: '\f079';
+	}
+	@if $iconName == 'fa-shopping-cart' {
+		content: '\f07a';
+	}
+	@if $iconName == 'fa-folder' {
+		content: '\f07b';
+	}
+	@if $iconName == 'fa-folder-open' {
+		content: '\f07c';
+	}
+	@if $iconName == 'fa-arrows-v' {
+		content: '\f07d';
+	}
+	@if $iconName == 'fa-arrows-h' {
+		content: '\f07e';
+	}
+	@if $iconName == 'fa-bar-chart' {
+		content: '\f080';
+	}
+	@if $iconName == 'fa-twitter-square' {
+		content: '\f081';
+	}
+	@if $iconName == 'fa-facebook-square' {
+		content: '\f082';
+	}
+	@if $iconName == 'fa-camera-retro' {
+		content: '\f083';
+	}
+	@if $iconName == 'fa-key' {
+		content: '\f084';
+	}
+	@if $iconName == 'fa-cogs' {
+		content: '\f085';
+	}
+	@if $iconName == 'fa-comments' {
+		content: '\f086';
+	}
+	@if $iconName == 'fa-thumbs-o-up' {
+		content: '\f087';
+	}
+	@if $iconName == 'fa-thumbs-o-down' {
+		content: '\f088';
+	}
+	@if $iconName == 'fa-star-half' {
+		content: '\f089';
+	}
+	@if $iconName == 'fa-heart-o' {
+		content: '\f08a';
+	}
+	@if $iconName == 'fa-sign-out' {
+		content: '\f08b';
+	}
+	@if $iconName == 'fa-linkedin-square' {
+		content: '\f08c';
+	}
+	@if $iconName == 'fa-thumb-tack' {
+		content: '\f08d';
+	}
+	@if $iconName == 'fa-external-link' {
+		content: '\f08e';
+	}
+	@if $iconName == 'fa-sign-in' {
+		content: '\f090';
+	}
+	@if $iconName == 'fa-trophy' {
+		content: '\f091';
+	}
+	@if $iconName == 'fa-github-square' {
+		content: '\f092';
+	}
+	@if $iconName == 'fa-upload' {
+		content: '\f093';
+	}
+	@if $iconName == 'fa-lemon-o' {
+		content: '\f094';
+	}
+	@if $iconName == 'fa-phone' {
+		content: '\f095';
+	}
+	@if $iconName == 'fa-square-o' {
+		content: '\f096';
+	}
+	@if $iconName == 'fa-bookmark-o' {
+		content: '\f097';
+	}
+	@if $iconName == 'fa-phone-square' {
+		content: '\f098';
+	}
+	@if $iconName == 'fa-twitter' {
+		content: '\f099';
+	}
+	@if $iconName == 'fa-facebook' {
+		content: '\f09a';
+	}
+	@if $iconName == 'fa-github' {
+		content: '\f09b';
+	}
+	@if $iconName == 'fa-unlock' {
+		content: '\f09c';
+	}
+	@if $iconName == 'fa-credit-card' {
+		content: '\f09d';
+	}
+	@if $iconName == 'fa-rss' {
+		content: '\f09e';
+	}
+	@if $iconName == 'fa-hdd-o' {
+		content: '\f0a0';
+	}
+	@if $iconName == 'fa-bullhorn' {
+		content: '\f0a1';
+	}
+	@if $iconName == 'fa-bell' {
+		content: '\f0f3';
+	}
+	@if $iconName == 'fa-certificate' {
+		content: '\f0a3';
+	}
+	@if $iconName == 'fa-hand-o-right' {
+		content: '\f0a4';
+	}
+	@if $iconName == 'fa-hand-o-left' {
+		content: '\f0a5';
+	}
+	@if $iconName == 'fa-hand-o-up' {
+		content: '\f0a6';
+	}
+	@if $iconName == 'fa-hand-o-down' {
+		content: '\f0a7';
+	}
+	@if $iconName == 'fa-arrow-circle-left' {
+		content: '\f0a8';
+	}
+	@if $iconName == 'fa-arrow-circle-right' {
+		content: '\f0a9';
+	}
+	@if $iconName == 'fa-arrow-circle-up' {
+		content: '\f0aa';
+	}
+	@if $iconName == 'fa-arrow-circle-down' {
+		content: '\f0ab';
+	}
+	@if $iconName == 'fa-globe' {
+		content: '\f0ac';
+	}
+	@if $iconName == 'fa-wrench' {
+		content: '\f0ad';
+	}
+	@if $iconName == 'fa-tasks' {
+		content: '\f0ae';
+	}
+	@if $iconName == 'fa-filter' {
+		content: '\f0b0';
+	}
+	@if $iconName == 'fa-briefcase' {
+		content: '\f0b1';
+	}
+	@if $iconName == 'fa-arrows-alt' {
+		content: '\f0b2';
+	}
+	@if $iconName == 'fa-users' {
+		content: '\f0c0';
+	}
+	@if $iconName == 'fa-link' {
+		content: '\f0c1';
+	}
+	@if $iconName == 'fa-cloud' {
+		content: '\f0c2';
+	}
+	@if $iconName == 'fa-flask' {
+		content: '\f0c3';
+	}
+	@if $iconName == 'fa-scissors' {
+		content: '\f0c4';
+	}
+	@if $iconName == 'fa-files-o' {
+		content: '\f0c5';
+	}
+	@if $iconName == 'fa-paperclip' {
+		content: '\f0c6';
+	}
+	@if $iconName == 'fa-floppy-o' {
+		content: '\f0c7';
+	}
+	@if $iconName == 'fa-square' {
+		content: '\f0c8';
+	}
+	@if $iconName == 'fa-bars' {
+		content: '\f0c9';
+	}
+	@if $iconName == 'fa-list-ul' {
+		content: '\f0ca';
+	}
+	@if $iconName == 'fa-list-ol' {
+		content: '\f0cb';
+	}
+	@if $iconName == 'fa-strikethrough' {
+		content: '\f0cc';
+	}
+	@if $iconName == 'fa-underline' {
+		content: '\f0cd';
+	}
+	@if $iconName == 'fa-table' {
+		content: '\f0ce';
+	}
+	@if $iconName == 'fa-magic' {
+		content: '\f0d0';
+	}
+	@if $iconName == 'fa-truck' {
+		content: '\f0d1';
+	}
+	@if $iconName == 'fa-pinterest' {
+		content: '\f0d2';
+	}
+	@if $iconName == 'fa-pinterest-square' {
+		content: '\f0d3';
+	}
+	@if $iconName == 'fa-google-plus-square' {
+		content: '\f0d4';
+	}
+	@if $iconName == 'fa-google-plus' {
+		content: '\f0d5';
+	}
+	@if $iconName == 'fa-money' {
+		content: '\f0d6';
+	}
+	@if $iconName == 'fa-caret-down' {
+		content: '\f0d7';
+	}
+	@if $iconName == 'fa-caret-up' {
+		content: '\f0d8';
+	}
+	@if $iconName == 'fa-caret-left' {
+		content: '\f0d9';
+	}
+	@if $iconName == 'fa-caret-right' {
+		content: '\f0da';
+	}
+	@if $iconName == 'fa-columns' {
+		content: '\f0db';
+	}
+	@if $iconName == 'fa-sort' {
+		content: '\f0dc';
+	}
+	@if $iconName == 'fa-sort-desc' {
+		content: '\f0dd';
+	}
+	@if $iconName == 'fa-sort-asc' {
+		content: '\f0de';
+	}
+	@if $iconName == 'fa-envelope' {
+		content: '\f0e0';
+	}
+	@if $iconName == 'fa-linkedin' {
+		content: '\f0e1';
+	}
+	@if $iconName == 'fa-undo' {
+		content: '\f0e2';
+	}
+	@if $iconName == 'fa-gavel' {
+		content: '\f0e3';
+	}
+	@if $iconName == 'fa-tachometer' {
+		content: '\f0e4';
+	}
+	@if $iconName == 'fa-comment-o' {
+		content: '\f0e5';
+	}
+	@if $iconName == 'fa-comments-o' {
+		content: '\f0e6';
+	}
+	@if $iconName == 'fa-bolt' {
+		content: '\f0e7';
+	}
+	@if $iconName == 'fa-sitemap' {
+		content: '\f0e8';
+	}
+	@if $iconName == 'fa-umbrella' {
+		content: '\f0e9';
+	}
+	@if $iconName == 'fa-clipboard' {
+		content: '\f0ea';
+	}
+	@if $iconName == 'fa-lightbulb-o' {
+		content: '\f0eb';
+	}
+	@if $iconName == 'fa-exchange' {
+		content: '\f0ec';
+	}
+	@if $iconName == 'fa-cloud-download' {
+		content: '\f0ed';
+	}
+	@if $iconName == 'fa-cloud-upload' {
+		content: '\f0ee';
+	}
+	@if $iconName == 'fa-user-md' {
+		content: '\f0f0';
+	}
+	@if $iconName == 'fa-stethoscope' {
+		content: '\f0f1';
+	}
+	@if $iconName == 'fa-suitcase' {
+		content: '\f0f2';
+	}
+	@if $iconName == 'fa-bell-o' {
+		content: '\f0a2';
+	}
+	@if $iconName == 'fa-coffee' {
+		content: '\f0f4';
+	}
+	@if $iconName == 'fa-cutlery' {
+		content: '\f0f5';
+	}
+	@if $iconName == 'fa-file-text-o' {
+		content: '\f0f6';
+	}
+	@if $iconName == 'fa-building-o' {
+		content: '\f0f7';
+	}
+	@if $iconName == 'fa-hospital-o' {
+		content: '\f0f8';
+	}
+	@if $iconName == 'fa-ambulance' {
+		content: '\f0f9';
+	}
+	@if $iconName == 'fa-medkit' {
+		content: '\f0fa';
+	}
+	@if $iconName == 'fa-fighter-jet' {
+		content: '\f0fb';
+	}
+	@if $iconName == 'fa-beer' {
+		content: '\f0fc';
+	}
+	@if $iconName == 'fa-h-square' {
+		content: '\f0fd';
+	}
+	@if $iconName == 'fa-plus-square' {
+		content: '\f0fe';
+	}
+	@if $iconName == 'fa-angle-double-left' {
+		content: '\f100';
+	}
+	@if $iconName == 'fa-angle-double-right' {
+		content: '\f101';
+	}
+	@if $iconName == 'fa-angle-double-up' {
+		content: '\f102';
+	}
+	@if $iconName == 'fa-angle-double-down' {
+		content: '\f103';
+	}
+	@if $iconName == 'fa-angle-left' {
+		content: '\f104';
+	}
+	@if $iconName == 'fa-angle-right' {
+		content: '\f105';
+	}
+	@if $iconName == 'fa-angle-up' {
+		content: '\f106';
+	}
+	@if $iconName == 'fa-angle-down' {
+		content: '\f107';
+	}
+	@if $iconName == 'fa-desktop' {
+		content: '\f108';
+	}
+	@if $iconName == 'fa-laptop' {
+		content: '\f109';
+	}
+	@if $iconName == 'fa-tablet' {
+		content: '\f10a';
+	}
+	@if $iconName == 'fa-mobile' {
+		content: '\f10b';
+	}
+	@if $iconName == 'fa-circle-o'{
+		 content: '\f10c';
+	}
+	@if $iconName == 'fa-quote-left'{
+		 content: '\f10d';
+	}
+	@if $iconName == 'fa-quote-right'{
+		 content: '\f10e';
+	}
+	@if $iconName == 'fa-spinner'{
+		 content: '\f110';
+	}
+	@if $iconName == 'fa-circle'{
+		 content: '\f111';
+	}
+	@if $iconName == 'fa-reply'{
+		 content: '\f112';
+	}
+	@if $iconName == 'fa-github-alt'{
+		 content: '\f113';
+	}
+	@if $iconName == 'fa-folder-o'{
+		 content: '\f114';
+	}
+	@if $iconName == 'fa-folder-open-o'{
+		 content: '\f115';
+	}
+	@if $iconName == 'fa-smile-o'{
+		 content: '\f118';
+	}
+	@if $iconName == 'fa-frown-o'{
+		 content: '\f119';
+	}
+	@if $iconName == 'fa-meh-o'{
+		 content: '\f11a';
+	}
+	@if $iconName == 'fa-gamepad'{
+		 content: '\f11b';
+	}
+	@if $iconName == 'fa-keyboard-o'{
+		 content: '\f11c';
+	}
+	@if $iconName == 'fa-flag-o'{
+		 content: '\f11d';
+	}
+	@if $iconName == 'fa-flag-checkered'{
+		 content: '\f11e';
+	}
+	@if $iconName == 'fa-terminal'{
+		 content: '\f120';
+	}
+	@if $iconName == 'fa-code'{
+		 content: '\f121';
+	}
+	@if $iconName == 'fa-reply-all'{
+		 content: '\f122';
+	}
+	@if $iconName == 'fa-star-half-o'{
+		 content: '\f123';
+	}
+	@if $iconName == 'fa-location-arrow'{
+		 content: '\f124';
+	}
+	@if $iconName == 'fa-crop'{
+		 content: '\f125';
+	}
+	@if $iconName == 'fa-code-fork'{
+		 content: '\f126';
+	}
+	@if $iconName == 'fa-chain-broken'{
+		 content: '\f127';
+	}
+	@if $iconName == 'fa-question'{
+		 content: '\f128';
+	}
+	@if $iconName == 'fa-info'{
+		 content: '\f129';
+	}
+	@if $iconName == 'fa-exclamation'{
+		 content: '\f12a';
+	}
+	@if $iconName == 'fa-superscript'{
+		 content: '\f12b';
+	}
+	@if $iconName == 'fa-subscript'{
+		 content: '\f12c';
+	}
+	@if $iconName == 'fa-eraser'{
+		 content: '\f12d';
+	}
+	@if $iconName == 'fa-puzzle-piece'{
+		 content: '\f12e';
+	}
+	@if $iconName == 'fa-microphone'{
+		 content: '\f130';
+	}
+	@if $iconName == 'fa-microphone-slash'{
+		 content: '\f131';
+	}
+	@if $iconName == 'fa-shield'{
+		 content: '\f132';
+	}
+	@if $iconName == 'fa-calendar-o'{
+		 content: '\f133';
+	}
+	@if $iconName == 'fa-fire-extinguisher'{
+		 content: '\f134';
+	}
+	@if $iconName == 'fa-rocket'{
+		 content: '\f135';
+	}
+	@if $iconName == 'fa-maxcdn'{
+		 content: '\f136';
+	}
+	@if $iconName == 'fa-chevron-circle-left'{
+		 content: '\f137';
+	}
+	@if $iconName == 'fa-chevron-circle-right'{
+		 content: '\f138';
+	}
+	@if $iconName == 'fa-chevron-circle-up'{
+		 content: '\f139';
+	}
+	@if $iconName == 'fa-chevron-circle-down'{
+		 content: '\f13a';
+	}
+	@if $iconName == 'fa-html5'{
+		 content: '\f13b';
+	}
+	@if $iconName == 'fa-css3'{
+		 content: '\f13c';
+	}
+	@if $iconName == 'fa-anchor'{
+		 content: '\f13d';
+	}
+	@if $iconName == 'fa-unlock-alt'{
+		 content: '\f13e';
+	}
+	@if $iconName == 'fa-bullseye'{
+		 content: '\f140';
+	}
+	@if $iconName == 'fa-ellipsis-h'{
+		 content: '\f141';
+	}
+	@if $iconName == 'fa-ellipsis-v'{
+		 content: '\f142';
+	}
+	@if $iconName == 'fa-rss-square'{
+		 content: '\f143';
+	}
+	@if $iconName == 'fa-play-circle'{
+		 content: '\f144';
+	}
+	@if $iconName == 'fa-ticket'{
+		 content: '\f145';
+	}
+	@if $iconName == 'fa-minus-square'{
+		 content: '\f146';
+	}
+	@if $iconName == 'fa-minus-square-o'{
+		 content: '\f147';
+	}
+	@if $iconName == 'fa-level-up'{
+		 content: '\f148';
+	}
+	@if $iconName == 'fa-level-down'{
+		 content: '\f149';
+	}
+	@if $iconName == 'fa-check-square'{
+		 content: '\f14a';
+	}
+	@if $iconName == 'fa-pencil-square'{
+		 content: '\f14b';
+	}
+	@if $iconName == 'fa-external-link-square'{
+		 content: '\f14c';
+	}
+	@if $iconName == 'fa-share-square'{
+		 content: '\f14d';
+	}
+	@if $iconName == 'fa-compass'{
+		 content: '\f14e';
+	}
+	@if $iconName == 'fa-caret-square-o-down'{
+		 content: '\f150';
+	}
+	@if $iconName == 'fa-caret-square-o-up'{
+		 content: '\f151';
+	}
+	@if $iconName == 'fa-caret-square-o-right'{
+		 content: '\f152';
+	}
+	@if $iconName == 'fa-eur'{
+		 content: '\f153';
+	}
+	@if $iconName == 'fa-gbp'{
+		 content: '\f154';
+	}
+	@if $iconName == 'fa-usd'{
+		 content: '\f155';
+	}
+	@if $iconName == 'fa-inr'{
+		 content: '\f156';
+	}
+	@if $iconName == 'fa-jpy'{
+		 content: '\f157';
+	}
+	@if $iconName == 'fa-rub'{
+		 content: '\f158';
+	}
+	@if $iconName == 'fa-krw'{
+		 content: '\f159';
+	}
+	@if $iconName == 'fa-btc'{
+		 content: '\f15a';
+	}
+	@if $iconName == 'fa-file'{
+		 content: '\f15b';
+	}
+	@if $iconName == 'fa-file-text'{
+		 content: '\f15c';
+	}
+	@if $iconName == 'fa-sort-alpha-asc'{
+		 content: '\f15d';
+	}
+	@if $iconName == 'fa-sort-alpha-desc'{
+		 content: '\f15e';
+	}
+	@if $iconName == 'fa-sort-amount-asc'{
+		 content: '\f160';
+	}
+	@if $iconName == 'fa-sort-amount-desc'{
+		 content: '\f161';
+	}
+	@if $iconName == 'fa-sort-numeric-asc'{
+		 content: '\f162';
+	}
+	@if $iconName == 'fa-sort-numeric-desc'{
+		 content: '\f163';
+	}
+	@if $iconName == 'fa-thumbs-up'{
+		 content: '\f164';
+	}
+	@if $iconName == 'fa-thumbs-down'{
+		 content: '\f165';
+	}
+	@if $iconName == 'fa-youtube-square'{
+		 content: '\f166';
+	}
+	@if $iconName == 'fa-youtube'{
+		 content: '\f167';
+	}
+	@if $iconName == 'fa-xing'{
+		 content: '\f168';
+	}
+	@if $iconName == 'fa-xing-square'{
+		 content: '\f169';
+	}
+	@if $iconName == 'fa-youtube-play'{
+		 content: '\f16a';
+	}
+	@if $iconName == 'fa-dropbox'{
+		 content: '\f16b';
+	}
+	@if $iconName == 'fa-stack-overflow'{
+		 content: '\f16c';
+	}
+	@if $iconName == 'fa-instagram'{
+		 content: '\f16d';
+	}
+	@if $iconName == 'fa-flickr'{
+		 content: '\f16e';
+	}
+	@if $iconName == 'fa-adn'{
+		 content: '\f170';
+	}
+	@if $iconName == 'fa-bitbucket'{
+		 content: '\f171';
+	}
+	@if $iconName == 'fa-bitbucket-square'{
+		 content: '\f172';
+	}
+	@if $iconName == 'fa-tumblr'{
+		 content: '\f173';
+	}
+	@if $iconName == 'fa-tumblr-square'{
+		 content: '\f174';
+	}
+	@if $iconName == 'fa-long-arrow-down'{
+		 content: '\f175';
+	}
+	@if $iconName == 'fa-long-arrow-up'{
+		 content: '\f176';
+	}
+	@if $iconName == 'fa-long-arrow-left'{
+		 content: '\f177';
+	}
+	@if $iconName == 'fa-long-arrow-right'{
+		 content: '\f178';
+	}
+	@if $iconName == 'fa-apple'{
+		 content: '\f179';
+	}
+	@if $iconName == 'fa-windows'{
+		 content: '\f17a';
+	}
+	@if $iconName == 'fa-android'{
+		 content: '\f17b';
+	}
+	@if $iconName == 'fa-linux'{
+		 content: '\f17c';
+	}
+	@if $iconName == 'fa-dribbble'{
+		 content: '\f17d';
+	}
+	@if $iconName == 'fa-skype'{
+		 content: '\f17e';
+	}
+	@if $iconName == 'fa-foursquare'{
+		 content: '\f180';
+	}
+	@if $iconName == 'fa-trello'{
+		 content: '\f181';
+	}
+	@if $iconName == 'fa-female'{
+		 content: '\f182';
+	}
+	@if $iconName == 'fa-male'{
+		 content: '\f183';
+	}
+	@if $iconName == 'fa-gittip'{
+		 content: '\f184';
+	}
+	@if $iconName == 'fa-sun-o'{
+		 content: '\f185';
+	}
+	@if $iconName == 'fa-moon-o'{
+		 content: '\f186';
+	}
+	@if $iconName == 'fa-archive'{
+		 content: '\f187';
+	}
+	@if $iconName == 'fa-bug'{
+		 content: '\f188';
+	}
+	@if $iconName == 'fa-vk'{
+		 content: '\f189';
+	}
+	@if $iconName == 'fa-weibo'{
+		 content: '\f18a';
+	}
+	@if $iconName == 'fa-renren'{
+		 content: '\f18b';
+	}
+	@if $iconName == 'fa-pagelines'{
+		 content: '\f18c';
+	}
+	@if $iconName == 'fa-stack-exchange'{
+		 content: '\f18d';
+	}
+	@if $iconName == 'fa-arrow-circle-o-right'{
+		 content: '\f18e';
+	}
+	@if $iconName == 'fa-arrow-circle-o-left'{
+		 content: '\f190';
+	}
+	@if $iconName == 'fa-caret-square-o-left'{
+		 content: '\f191';
+	}
+	@if $iconName == 'fa-dot-circle-o'{
+		 content: '\f192';
+	}
+	@if $iconName == 'fa-wheelchair'{
+		 content: '\f193';
+	}
+	@if $iconName == 'fa-vimeo-square'{
+		 content: '\f194';
+	}
+	@if $iconName == 'fa-try'{
+		 content: '\f195';
+	}
+	@if $iconName == 'fa-plus-square-o'{
+		 content: '\f196';
+	}
+	@if $iconName == 'fa-space-shuttle'{
+		 content: '\f197';
+	}
+	@if $iconName == 'fa-slack'{
+		 content: '\f198';
+	}
+	@if $iconName == 'fa-envelope-square'{
+		 content: '\f199';
+	}
+	@if $iconName == 'fa-wordpress'{
+		 content: '\f19a';
+	}
+	@if $iconName == 'fa-openid'{
+		 content: '\f19b';
+	}
+	@if $iconName == 'fa-university'{
+		 content: '\f19c';
+	}
+	@if $iconName == 'fa-graduation-cap'{
+		 content: '\f19d';
+	}
+	@if $iconName == 'fa-yahoo'{
+		 content: '\f19e';
+	}
+	@if $iconName == 'fa-google'{
+		 content: '\f1a0';
+	}
+	@if $iconName == 'fa-reddit'{
+		 content: '\f1a1';
+	}
+	@if $iconName == 'fa-reddit-square'{
+		 content: '\f1a2';
+	}
+	@if $iconName == 'fa-stumbleupon-circle'{
+		 content: '\f1a3';
+	}
+	@if $iconName == 'fa-stumbleupon'{
+		 content: '\f1a4';
+	}
+	@if $iconName == 'fa-delicious'{
+		 content: '\f1a5';
+	}
+	@if $iconName == 'fa-digg'{
+		 content: '\f1a6';
+	}
+	@if $iconName == 'fa-pied-piper'{
+		 content: '\f1a7';
+	}
+	@if $iconName == 'fa-pied-piper-alt'{
+		 content: '\f1a8';
+	}
+	@if $iconName == 'fa-drupal'{
+		 content: '\f1a9';
+	}
+	@if $iconName == 'fa-joomla'{
+		 content: '\f1aa';
+	}
+	@if $iconName == 'fa-language'{
+		 content: '\f1ab';
+	}
+	@if $iconName == 'fa-fax'{
+		 content: '\f1ac';
+	}
+	@if $iconName == 'fa-building'{
+		 content: '\f1ad';
+	}
+	@if $iconName == 'fa-child'{
+		 content: '\f1ae';
+	}
+	@if $iconName == 'fa-paw'{
+		 content: '\f1b0';
+	}
+	@if $iconName == 'fa-spoon'{
+		 content: '\f1b1';
+	}
+	@if $iconName == 'fa-cube'{
+		 content: '\f1b2';
+	}
+	@if $iconName == 'fa-cubes'{
+		 content: '\f1b3';
+	}
+	@if $iconName == 'fa-behance'{
+		 content: '\f1b4';
+	}
+	@if $iconName == 'fa-behance-square'{
+		 content: '\f1b5';
+	}
+	@if $iconName == 'fa-steam'{
+		 content: '\f1b6';
+	}
+	@if $iconName == 'fa-steam-square'{
+		 content: '\f1b7';
+	}
+	@if $iconName == 'fa-recycle'{
+		 content: '\f1b8';
+	}
+	@if $iconName == 'fa-car'{
+		 content: '\f1b9';
+	}
+	@if $iconName == 'fa-taxi'{
+		 content: '\f1ba';
+	}
+	@if $iconName == 'fa-tree'{
+		 content: '\f1bb';
+	}
+	@if $iconName == 'fa-spotify'{
+		 content: '\f1bc';
+	}
+	@if $iconName == 'fa-deviantart'{
+		 content: '\f1bd';
+	}
+	@if $iconName == 'fa-soundcloud'{
+		 content: '\f1be';
+	}
+	@if $iconName == 'fa-database'{
+		 content: '\f1c0';
+	}
+	@if $iconName == 'fa-file-pdf-o'{
+		 content: '\f1c1';
+	}
+	@if $iconName == 'fa-file-word-o'{
+		 content: '\f1c2';
+	}
+	@if $iconName == 'fa-file-excel-o'{
+		 content: '\f1c3';
+	}
+	@if $iconName == 'fa-file-powerpoint-o'{
+		 content: '\f1c4';
+	}
+	@if $iconName == 'fa-file-image-o'{
+		 content: '\f1c5';
+	}
+	@if $iconName == 'fa-file-archive-o'{
+		 content: '\f1c6';
+	}
+	@if $iconName == 'fa-file-audio-o'{
+		 content: '\f1c7';
+	}
+	@if $iconName == 'fa-file-video-o'{
+		 content: '\f1c8';
+	}
+	@if $iconName == 'fa-file-code-o'{
+		 content: '\f1c9';
+	}
+	@if $iconName == 'fa-vine'{
+		 content: '\f1ca';
+	}
+	@if $iconName == 'fa-codepen'{
+		 content: '\f1cb';
+	}
+	@if $iconName == 'fa-jsfiddle'{
+		 content: '\f1cc';
+	}
+	@if $iconName == 'fa-life-ring'{
+		 content: '\f1cd';
+	}
+	@if $iconName == 'fa-circle-o-notch'{
+		 content: '\f1ce';
+	}
+	@if $iconName == 'fa-rebel'{
+		 content: '\f1d0';
+	}
+	@if $iconName == 'fa-empire'{
+		 content: '\f1d1';
+	}
+	@if $iconName == 'fa-git-square'{
+		 content: '\f1d2';
+	}
+	@if $iconName == 'fa-git'{
+		 content: '\f1d3';
+	}
+	@if $iconName == 'fa-hacker-news'{
+		 content: '\f1d4';
+	}
+	@if $iconName == 'fa-tencent-weibo'{
+		 content: '\f1d5';
+	}
+	@if $iconName == 'fa-qq'{
+		 content: '\f1d6';
+	}
+	@if $iconName == 'fa-weixin'{
+		 content: '\f1d7';
+	}
+	@if $iconName == 'fa-paper-plane'{
+		 content: '\f1d8';
+	}
+	@if $iconName == 'fa-paper-plane-o'{
+		 content: '\f1d9';
+	}
+	@if $iconName == 'fa-history'{
+		 content: '\f1da';
+	}
+	@if $iconName == 'fa-circle-thin'{
+		 content: '\f1db';
+	}
+	@if $iconName == 'fa-header'{
+		 content: '\f1dc';
+	}
+	@if $iconName == 'fa-paragraph'{
+		 content: '\f1dd';
+	}
+	@if $iconName == 'fa-sliders'{
+		 content: '\f1de';
+	}
+	@if $iconName == 'fa-share-alt'{
+		 content: '\f1e0';
+	}
+	@if $iconName == 'fa-share-alt-square'{
+		 content: '\f1e1';
+	}
+	@if $iconName == 'fa-bomb'{
+		 content: '\f1e2';
+	}
+	@if $iconName == 'fa-futbol-o'{
+		 content: '\f1e3';
+	}
+	@if $iconName == 'fa-tty'{
+		 content: '\f1e4';
+	}
+	@if $iconName == 'fa-binoculars'{
+		 content: '\f1e5';
+	}
+	@if $iconName == 'fa-plug'{
+		 content: '\f1e6';
+	}
+	@if $iconName == 'fa-slideshare'{
+		 content: '\f1e7';
+	}
+	@if $iconName == 'fa-twitch'{
+		 content: '\f1e8';
+	}
+	@if $iconName == 'fa-yelp'{
+		 content: '\f1e9';
+	}
+	@if $iconName == 'fa-newspaper-o'{
+		 content: '\f1ea';
+	}
+	@if $iconName == 'fa-wifi'{
+		 content: '\f1eb';
+	}
+	@if $iconName == 'fa-calculator'{
+		 content: '\f1ec';
+	}
+	@if $iconName == 'fa-paypal'{
+		 content: '\f1ed';
+	}
+	@if $iconName == 'fa-google-wallet'{
+		 content: '\f1ee';
+	}
+	@if $iconName == 'fa-cc-visa'{
+		 content: '\f1f0';
+	}
+	@if $iconName == 'fa-cc-mastercard'{
+		 content: '\f1f1';
+	}
+	@if $iconName == 'fa-cc-discover'{
+		 content: '\f1f2';
+	}
+	@if $iconName == 'fa-cc-amex'{
+		 content: '\f1f3';
+	}
+	@if $iconName == 'fa-cc-paypal'{
+		 content: '\f1f4';
+	}
+	@if $iconName == 'fa-cc-stripe'{
+		 content: '\f1f5';
+	}
+	@if $iconName == 'fa-bell-slash'{
+		 content: '\f1f6';
+	}
+	@if $iconName == 'fa-bell-slash-o'{
+		 content: '\f1f7';
+	}
+	@if $iconName == 'fa-trash'{
+		 content: '\f1f8';
+	}
+	@if $iconName == 'fa-copyright'{
+		 content: '\f1f9';
+	}
+	@if $iconName == 'fa-at'{
+		 content: '\f1fa';
+	}
+	@if $iconName == 'fa-eyedropper'{
+		 content: '\f1fb';
+	}
+	@if $iconName == 'fa-paint-brush'{
+		 content: '\f1fc';
+	}
+	@if $iconName == 'fa-birthday-cake'{
+		 content: '\f1fd';
+	}
+	@if $iconName == 'fa-area-chart'{
+		 content: '\f1fe';
+	}
+	@if $iconName == 'fa-pie-chart'{
+		 content: '\f200';
+	}
+	@if $iconName == 'fa-line-chart'{
+		 content: '\f201';
+	}
+	@if $iconName == 'fa-lastfm'{
+		 content: '\f202';
+	}
+	@if $iconName == 'fa-lastfm-square'{
+		 content: '\f203';
+	}
+	@if $iconName == 'fa-toggle-off'{
+		 content: '\f204';
+	}
+	@if $iconName == 'fa-toggle-on'{
+		 content: '\f205';
+	}
+	@if $iconName == 'fa-bicycle'{
+		 content: '\f206';
+	}
+	@if $iconName == 'fa-bus'{
+		 content: '\f207';
+	}
+	@if $iconName == 'fa-ioxhost'{
+		 content: '\f208';
+	}
+	@if $iconName == 'fa-angellist'{
+		 content: '\f209';
+	}
+	@if $iconName == 'fa-cc'{
+		 content: '\f20a';
+	}
+	@if $iconName == 'fa-ils'{
+		 content: '\f20b';
+	}
+	@if $iconName == 'fa-meanpath'{
+		 content: '\f20c';
+	}
+}

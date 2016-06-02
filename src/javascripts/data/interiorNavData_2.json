@@ -1,0 +1,32 @@
+[
+	{
+		"name":"NACAC Exchange",
+		"type":"link",
+		"content":"/index.html"
+	},
+	{
+		"name":"Membership Overview",
+		"type":"link",
+		"content":"membership.html"
+	},
+	{
+		"name":"Benefits",
+		"type":"link",
+		"content":"#"
+	},
+	{
+		"name":"Directory",
+		"type":"link",
+		"content":"#"
+	},
+	{
+		"name":"Member Spotlight",
+		"type":"link",
+		"content":"#"
+	},
+	{
+		"name":"NACAC Exchange",
+		"type":"link",
+		"content":"#"
+	}
+]

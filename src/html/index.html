@@ -1,0 +1,111 @@
+
+{% extends '_layouts/main-application.html' %}
+
+{% block content %}
+<main>
+	{% include './_shared/utility.html'%}
+
+	{% include './_shared/navigation.html'%}
+
+	{% include './_shared/hero.html'%}
+
+	<div class="content-block__row">
+		{% set colorBlock = { className: 'color-block--wide', heading: "College Fairs", image: "main/color-block-bg-purple.jpg"} %}
+		{% include './_components/color-block.html'%}
+		
+		{% set colorBlock = { className: 'color-block--wide', heading: "National Conference", image: "main/color-block-bg-green.jpg"} %}
+		{% include './_components/color-block.html'%}
+
+	</div>
+
+	<article class="article__row article--white">
+		<div class="container">
+			<header class="article__header">
+				<h2>Nacac Expertise</h2>
+				<p>Ad pro quidam virtute voluptaria. In eum propriae insolens nominati, sed te nihil affert doming, nulla melius praesent et mei. Ad essent quaeque periculis mea. No iuvaret torquatos conclusionemque vel.</p>
+			</header>
+			<section class="card-block__row">
+				<div class="row">
+						
+					{% set cardBlock = { heading: "National College Fairs", image: "shared/card-national", button: true } %}
+					{% include './_components/card-block.html'%}
+					
+					{% set cardBlock = { heading: "Performing and Visual Arts College Fairs", image: "shared/card-performing", button: true } %}
+					{% include './_components/card-block.html'%}
+				
+					{% set cardBlock = { heading: "Stem College and Career Fairs", image: "shared/card-stem", button: true } %}
+					{% include './_components/card-block.html'%}
+					
+					{% set cardBlock = { heading: "International Universities Fair", image: "shared/card-international", button: true } %}
+					{% include './_components/card-block.html'%}
+				
+				</div>
+			</section>
+		</div>
+	</article>
+
+	<article class="article__row article--lightgrey announcements">
+		<div class="announcement__header">
+				<div class="container">
+					<p><i class="fa fa-bullhorn"></i>Announcements</p>
+				</div>
+			</div>
+		<div class="container">
+			<section class="announcement__row row">
+				<div class="col-md-7 listing__block">
+					<header class="article__header">
+						<h2>Get Involved</h2>
+					</header>
+
+					{% include '_components/listing-entry.html'%}
+
+					{% include '_components/listing-entry.html'%}
+
+					{% include '_components/listing-entry.html'%}
+
+				</div>
+				<div class="col-md-5 calendar__block">
+					<header class="article__header">
+						<h2>Upcoming Training</h2>
+					</header>
+					
+					{% include '_components/calendar-entry.html'%}
+
+					{% include '_components/calendar-entry.html'%}
+
+					{% include '_components/calendar-entry.html'%}
+					
+					<a href="#" class="btn btn--nacac-blue">View Full Calendar</a>
+				</div>
+			</section>
+		</div>
+	</article>
+	<article class="article__row article--white">
+		<div class="container">
+			{% include './_components/focus-testimonial.html' %}
+		</div>
+	</article>
+	<article class="article__row article--bluegrey">
+		<div class="container">
+			<div class="article__header">
+				<h2>Member Stories</h2>
+			</div>
+			<div class="article__row row">
+				{% include './_components/testimonial-block.html' %}
+
+				{% include './_components/testimonial-block.html' %}
+
+				{% include './_components/testimonial-block.html' %}
+			</div>
+		</div>
+	</article>
+
+	{% include './_components/full-block-row.html'%}
+
+	{% include './_shared/footer.html'%}
+</main>
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}
+

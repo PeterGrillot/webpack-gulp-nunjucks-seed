@@ -1,0 +1,234 @@
+/******************************************************************
+███╗   ███╗██╗██╗  ██╗██╗███╗   ██╗███████╗
+████╗ ████║██║╚██╗██╔╝██║████╗  ██║██╔════╝
+██╔████╔██║██║ ╚███╔╝ ██║██╔██╗ ██║███████╗
+██║╚██╔╝██║██║ ██╔██╗ ██║██║╚██╗██║╚════██║
+██║ ╚═╝ ██║██║██╔╝ ██╗██║██║ ╚████║███████║
+╚═╝     ╚═╝╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝
+********************************************************************/
+
+
+/*
+██████╗ ██████╗ ███████╗███████╗██╗██╗  ██╗
+██╔══██╗██╔══██╗██╔════╝██╔════╝██║╚██╗██╔╝
+██████╔╝██████╔╝█████╗  █████╗  ██║ ╚███╔╝ 
+██╔═══╝ ██╔══██╗██╔══╝  ██╔══╝  ██║ ██╔██╗ 
+██║     ██║  ██║███████╗██║     ██║██╔╝ ██╗
+╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝
+*/
+
+@mixin prefix($property, $value, $prefixes: ()) {
+		@each $prefix in $prefixes {
+				#{'-' + $prefix + '-' + $property}: $value;
+		}
+		// Output standard non-prefixed declaration
+		#{$property}: $value;
+}
+
+
+/*
+████████╗██████╗  █████╗ ███╗   ██╗███████╗██╗████████╗██╗ ██████╗ ███╗   ██╗███████╗
+╚══██╔══╝██╔══██╗██╔══██╗████╗  ██║██╔════╝██║╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝
+   ██║   ██████╔╝███████║██╔██╗ ██║███████╗██║   ██║   ██║██║   ██║██╔██╗ ██║███████╗
+   ██║   ██╔══██╗██╔══██║██║╚██╗██║╚════██║██║   ██║   ██║██║   ██║██║╚██╗██║╚════██║
+   ██║   ██║  ██║██║  ██║██║ ╚████║███████║██║   ██║   ██║╚██████╔╝██║ ╚████║███████║
+   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+*/
+
+
+/*
+@include transition(all 0.2s ease-in-out);
+*/
+
+@mixin transition($transition...) {
+		// defining prefixes so we can use them in mixins below
+		$prefixes: ("-webkit-", "");
+		@each $prefix in $prefixes {
+				#{$prefix}transition: $transition;
+		}
+}
+
+
+/*
+ ██████╗██╗     ███████╗ █████╗ ██████╗ ███████╗██╗██╗  ██╗
+██╔════╝██║     ██╔════╝██╔══██╗██╔══██╗██╔════╝██║╚██╗██╔╝
+██║     ██║     █████╗  ███████║██████╔╝█████╗  ██║ ╚███╔╝ 
+██║     ██║     ██╔══╝  ██╔══██║██╔══██╗██╔══╝  ██║ ██╔██╗ 
+╚██████╗███████╗███████╗██║  ██║██║  ██║██║     ██║██╔╝ ██╗
+ ╚═════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝
+*/
+
+@mixin clearfix{
+		&:before,
+		&:after {
+				content: " "; // 1
+				display: table; // 2
+		}
+		&:after {
+				clear: both;
+		}
+}
+
+
+/*
+ ██████╗ ██████╗  █████╗ ██████╗ ██╗███████╗███╗   ██╗████████╗███████╗
+██╔════╝ ██╔══██╗██╔══██╗██╔══██╗██║██╔════╝████╗  ██║╚══██╔══╝██╔════╝
+██║  ███╗██████╔╝███████║██║  ██║██║█████╗  ██╔██╗ ██║   ██║   ███████╗
+██║   ██║██╔══██╗██╔══██║██║  ██║██║██╔══╝  ██║╚██╗██║   ██║   ╚════██║
+╚██████╔╝██║  ██║██║  ██║██████╔╝██║███████╗██║ ╚████║   ██║   ███████║
+ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝
+*/
+
+
+/* @include css-gradient(#dfdfdf,#f8f8f8); */
+
+@mixin css-gradient($from: #dfdfdf, $to: #f8f8f8) {
+		background-color: $to;
+		background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+		background-image: -webkit-linear-gradient(top, $from, $to);
+		background-image: -moz-linear-gradient(top, $from, $to);
+		background-image: -o-linear-gradient(top, $from, $to);
+		background-image: linear-gradient(to bottom, $from, $to);
+}
+
+
+/*
+██████╗  ██████╗ ██╗  ██╗    ███████╗██╗███████╗██╗███╗   ██╗ ██████╗ 
+██╔══██╗██╔═══██╗╚██╗██╔╝    ██╔════╝██║╚══███╔╝██║████╗  ██║██╔════╝ 
+██████╔╝██║   ██║ ╚███╔╝     ███████╗██║  ███╔╝ ██║██╔██╗ ██║██║  ███╗
+██╔══██╗██║   ██║ ██╔██╗     ╚════██║██║ ███╔╝  ██║██║╚██╗██║██║   ██║
+██████╔╝╚██████╔╝██╔╝ ██╗    ███████║██║███████╗██║██║ ╚████║╚██████╔╝
+╚═════╝  ╚═════╝ ╚═╝  ╚═╝    ╚══════╝╚═╝╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+*/
+
+
+/* @include box-sizing(border-box); */
+
+@mixin box-sizing($type: border-box) {
+		-webkit-box-sizing: $type;
+		-moz-box-sizing: $type;
+		-ms-box-sizing: $type;
+		box-sizing: $type;
+}
+
+
+/*
+██████╗ ███████╗████████╗██╗███╗   ██╗ █████╗ 
+██╔══██╗██╔════╝╚══██╔══╝██║████╗  ██║██╔══██╗
+██████╔╝█████╗     ██║   ██║██╔██╗ ██║███████║
+██╔══██╗██╔══╝     ██║   ██║██║╚██╗██║██╔══██║
+██║  ██║███████╗   ██║   ██║██║ ╚████║██║  ██║
+╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
+*/
+
+
+/* @include background-image-retina(logo, png, 200px, 100px); */
+
+@mixin background-image-retina($file, $type, $width, $height) {
+		background-image: url($file + '.' + $type);
+		@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+				& {
+						background-image: url($file + '@2x.' + $type);
+						-webkit-background-size: $width $height;
+						-moz-background-size: $width $height;
+						-o-background-size: $width $height;
+						background-size: $width $height;
+				}
+		}
+}
+
+
+/*
+ █████╗ ███╗   ██╗██╗███╗   ███╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗
+██╔══██╗████╗  ██║██║████╗ ████║██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║
+███████║██╔██╗ ██║██║██╔████╔██║███████║   ██║   ██║██║   ██║██╔██╗ ██║
+██╔══██║██║╚██╗██║██║██║╚██╔╝██║██╔══██║   ██║   ██║██║   ██║██║╚██╗██║
+██║  ██║██║ ╚████║██║██║ ╚═╝ ██║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║
+╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+*/
+
+@mixin animation($animate...) {
+		$max: length($animate);
+		$animations: '';
+		@for $i from 1 through $max {
+				$animations: #{$animations + nth($animate, $i)};
+				@if $i < $max {
+						$animations: #{$animations + ", "};
+				}
+		}
+		-webkit-animation: $animations;
+		-moz-animation: $animations;
+		-o-animation: $animations;
+		animation: $animations;
+}
+
+
+/*
+██╗  ██╗███████╗██╗   ██╗███████╗██████╗  █████╗ ███╗   ███╗███████╗
+██║ ██╔╝██╔════╝╚██╗ ██╔╝██╔════╝██╔══██╗██╔══██╗████╗ ████║██╔════╝
+█████╔╝ █████╗   ╚████╔╝ █████╗  ██████╔╝███████║██╔████╔██║█████╗  
+██╔═██╗ ██╔══╝    ╚██╔╝  ██╔══╝  ██╔══██╗██╔══██║██║╚██╔╝██║██╔══╝  
+██║  ██╗███████╗   ██║   ██║     ██║  ██║██║  ██║██║ ╚═╝ ██║███████╗
+╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝
+*/
+
+
+/*
+@include keyframes(move-the-object) {
+	0%   { left: 100px; }
+	100% { left: 200px; }
+}
+
+.object-to-animate {
+	@include animation('move-the-object .5s 1', 'move-the-object-again .5s 1 .5s');
+} 
+*/
+
+@mixin keyframes($animationName) {
+		@-webkit-keyframes #{$animationName} {
+				@content;
+		}
+		@-moz-keyframes #{$animationName} {
+				@content;
+		}
+		@-o-keyframes #{$animationName} {
+				@content;
+		}
+		@keyframes #{$animationName} {
+				@content;
+		}
+}
+
+
+/*
+███████╗     ██╗███╗   ██╗██████╗ ███████╗██╗  ██╗
+╚══███╔╝     ██║████╗  ██║██╔══██╗██╔════╝╚██╗██╔╝
+  ███╔╝█████╗██║██╔██╗ ██║██║  ██║█████╗   ╚███╔╝ 
+ ███╔╝ ╚════╝██║██║╚██╗██║██║  ██║██╔══╝   ██╔██╗ 
+███████╗     ██║██║ ╚████║██████╔╝███████╗██╔╝ ██╗
+╚══════╝     ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝
+*/
+
+/*
+@include zone-index(base,2)
+
+z-index: 12;
+*/
+
+@mixin zone-index($zone,$level){
+	@if $zone == "negative"{
+		z-index: -#{$level};
+	}
+	@if $zone == "base"{
+		z-index: #{10 + $level};
+	}
+	@if $zone == "page"{
+		z-index: #{20 + $level};
+	}
+	@if $zone == "overlay"{
+		z-index: #{30 + $level};
+	}
+	@if $zone == "top"{
+		z-index: #{90 + $level};
+	}
+}

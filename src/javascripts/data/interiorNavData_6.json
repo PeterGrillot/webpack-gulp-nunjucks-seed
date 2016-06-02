@@ -1,0 +1,63 @@
+[
+	{
+		"name":"National Conference",
+		"type":"link",
+		"content":"#"
+	},
+	{
+		"name":"College Fairs",
+		"type":"link",
+		"content":"#"
+	},
+	{
+		"name":"Affiliate Annual Conferences",
+		"type":"link",
+		"content":"#"
+	},
+	{
+		"name":"Affiliate Annual Conferences",
+		"type":"link",
+		"content":"#"
+	},
+	{
+        "name":"Core Values",
+        "type":"link_set",
+        "content":[
+            {
+                "text":"Ethics",
+                "url":"#"
+            },
+            {
+                "text":"Statement of Principles of Good Practice",
+                "url":"#"
+            }
+        ]
+    },
+    {
+        "name":"Legistative",
+        "type":"link_set",
+        "content":[
+            {
+                "text":"What to Talk About with Your Legistator",
+                "url":"#"
+            },
+            {
+                "text":"Legislative Action Center",
+                "url":"#"
+            },
+            {
+                "text":"State Legislative Portal",
+                "url":"#"
+            },
+            {
+                "text":"Industry Issues",
+                "url":"#"
+            }
+        ]
+    }
+]
+
+
+
+
+

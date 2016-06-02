@@ -1,0 +1,542 @@
+// I'm including all fair scss here for the time being. We should probably compartmentalize eventually, but I wanted to start with a simple include.
+
+// set variables
+$blue-light: #67aee7;
+$green: #007451;
+$gray: #333;
+$blue-dark: #2c2172;
+$red-dark: #ab3737;
+$green-dark: #0e6735;
+
+// basic styling
+.bold {
+	font-weight: 700;
+}
+.orange {
+  color: $nacac-orange;
+}
+.text-uppercase { // bootstrap class
+  text-transform: uppercase;
+}
+.text-center { // bootstrap class
+  text-align: center;
+}
+
+.margin-bot-30 {
+	margin-bottom: 3rem;
+}
+
+// utility nav
+.utility-nav.utility-nav-fair {
+	.utility-nav-register {
+		a {
+			font-weight: 700;
+			color: $nacac_orange;
+		}
+	}
+	@media screen and (max-width: 991px) {
+		.utility-nav-register a {
+			color: #fff;
+		}
+	}
+	&.utility-nav--scrolled {
+		.utility-nav-register {
+			a {
+				color: #fff;
+			}
+		}
+	}
+}
+
+// hero element
+.hero-fair {
+	.hero__byline {
+		margin: 0 0 5rem 0;
+		font: {
+			family: $serif;
+			size: 2.4rem;
+			style: italic;
+		}
+	}
+	.hero-icon-block {
+		display: block;
+		font: {
+			size: 1.8rem;
+			weight: 700;
+		}
+		color: #fff;
+		svg {
+			display: block;
+			margin: 0 auto .8rem auto;
+			width: 7.2rem;
+			height: 7.2rem;
+			margin-bottom: .5rem;
+			opacity: 0.9;
+			fill: $blue-light
+		}
+	}
+}
+.hero-fair-nav-wrap {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 7.2rem;
+	background: rgba(255,255,255,0.8);
+	nav {
+		position: relative;
+	}
+	ul {
+		list-style: none;
+		li {
+			display: inline-block;
+			a {
+				display: inline-block;
+				padding: 0 2rem;
+				font-weight: 700;
+				text-transform: uppercase;
+				line-height: 7.2rem;
+				color: #333;
+			}
+		}
+	}
+	.logo-ncf {
+		display: block;
+		position: absolute;
+		top: .2rem;
+		left: 1.5rem;
+		width: 124px;
+		height: 68px;
+	}
+}
+
+.logo-ncf-utility {
+	margin: 0 0 0 1rem;
+	width: 9rem;
+	height: 4.8rem;
+}
+
+// buttons
+.btn-simple {
+	color: #333333;
+	border: 1px solid #333333;
+	&:hover {
+		border-color: transparent;
+	}
+}
+.btn-simple-blue {
+	color: #fff;
+	border: 1px solid transparent;
+	background: $nacac-blue;
+}
+
+// fair events (I based this on .calendar__entry)
+.fair-events {
+	list-style: none;
+	padding-left: 0;
+	li {
+		margin-bottom: 3rem;
+		@include clearfix;
+	}
+	.fair-event-content {
+		float: right;
+		width: calc(100% - 9rem);
+	}
+	.fair-event-icon {
+		float: left;
+		width: 7rem;
+		height: 7rem;
+	}
+	h3 {
+		margin: 0;
+	}
+	.btn {
+		margin-bottom: 1.5rem !important; // easier than dropping in a lot of dependent classes and media queries. maybe we can make the default margin-left: auto, margin-right: auto?
+	}
+	&.fair-events-bordered {
+		li {
+			padding: 1rem 0 2rem 0;
+			border-bottom: 1px solid #ddd;
+			&:last-child {
+				border: 0;
+			}
+		}
+	}
+	@media screen and (max-width: 767px) {
+		.fair-event-content {
+			width: 100%;
+		}
+		.fair-event-icon {
+			display: none;
+		}
+	}
+}
+
+// primary nav
+.primary-nav.primary-nav-fair {
+	> div > ul {
+		background: rgba(255,255,255,.8);
+		li {
+			background: none;
+		}
+	}
+	.primary-nav__logo {
+		svg {
+			width: 12.4rem;
+			height: 6.8rem;
+			margin: -3.4rem 0 0 -6.2rem;
+	  }
+	}
+}
+
+// footer
+.footer-fair {
+	h3 {
+		margin-top: 0;
+	}
+	@media screen and (max-width: 767px) {
+		ul {
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+.announcement__header.announcement__header-top-border {
+	border-top: 1px solid #bdbdbd;
+}
+
+// map 
+// .article-map {
+// 	.container {
+// 		text-align: center;
+// 	}
+// }
+
+
+
+#map {
+	margin-bottom: 4rem;
+	overflow:hidden;
+	padding-bottom: 56.25%;
+	// position: relative;
+	height: 0;
+	iframe{
+		left:0;
+		top:0;
+		height:100%;
+		width:100%;
+		position:absolute;
+	}
+}
+.checkbox-wrap {
+	position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.checkbox-wrap label {
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.checkbox-wrap input {
+	position: absolute;
+  margin-left: -20px;
+  margin-top: 4px \9;
+}
+
+
+
+#map-controls {
+	position: relative;
+	padding: 1rem;
+	text-align: center;
+	border: 1px solid #ddd;
+	[class*='col-'] > * {
+		display: inline-block;
+		padding: .5rem 0;
+		font-size: 1.4rem; 
+		line-height: 1.5;
+	}
+	h3 {
+		margin: 0;
+	}
+}
+.switch-wrap { // label element
+	display: inline-block;
+	margin-right: 1rem;
+	font-weight: 400;
+	cursor: pointer;
+	* {
+		vertical-align: middle;
+	}
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 2.4rem;
+  input { // hide the checkbox
+  	display :none;
+  }
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d4d4d4;
+  -webkit-transition: .4s;
+  transition: .4s;
+	&:before {
+	  position: absolute;
+	  content: "";
+	  height: 2rem;
+	  width: 2rem;
+	  left: .2rem;
+	  bottom: .2rem;
+	  background-color: white;
+	  -webkit-transition: .2s;
+	  transition: .2s;
+	}
+}
+
+.check-fairs {
+	input:checked + .slider {
+	  background-color: $blue-dark;
+	}
+	input:focus + .slider {
+	  box-shadow: 0 0 .1rem $blue-dark;
+	}
+}
+.check-stem {
+	input:checked + .slider {
+	  background-color: $green-dark;
+	}
+	input:focus + .slider {
+	  box-shadow: 0 0 .1rem $green-dark;
+	}
+}
+.check-performing {
+	input:checked + .slider {
+	  background-color: $red-dark;
+	}
+	input:focus + .slider {
+	  box-shadow: 0 0 .1rem $red-dark;
+	}
+}
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(1.6rem);
+  -ms-transform: translateX(1.6rem);
+  transform: translateX(1.6rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 2.4rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+// form block (universal element or just for fairs?)
+.form-block {
+	padding: 3rem;
+	h3 {
+		margin: 0 0 4rem 0;
+	}
+	p {
+		margin: 0 0 4rem 0;
+	}
+	label {
+		font-weight: 400;
+	}
+}
+
+
+// icon list
+.icon-list {
+	.icon-item {
+		@include clearfix;
+		svg {
+			float: left;
+			width: 6rem;
+			height: 6rem;
+			fill: #fff;
+			opacity: 0.8;
+		}
+		span {
+			display: block;
+			padding-left: 7rem;
+			padding-top: 2.1rem;
+			line-height: 1.5rem;
+		}
+		& + .icon-item {
+			margin-top: 1.5rem;
+		}
+	}
+}
+
+// carousel 
+.carousel-sponsors {
+	padding: 6rem 0;
+	img {
+		max-width: 20rem;
+		margin: 0 auto;
+	}
+	.carousel-control {
+		&.left,
+		&.right {
+			background: none;
+		}
+	}
+	svg {
+		position: absolute;
+		top: 50%;
+		width: 5rem;
+		height: 5rem;
+		-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+					 	transform: translateY(-50%);
+	}
+}
+
+// embedded map
+.embed-map {
+	margin: 3rem 0;
+}
+
+.filter-paging {
+	margin-bottom: 3rem;
+	[class*='col-']:last-child {
+		text-align: right;
+	}
+	.pagination {
+		li.disabled a {
+			border-color: transparent;
+		}
+		li.active a {
+			color: $nacac_blue;
+		}
+		li.skip span:hover {
+			border-color: transparent;
+		}
+	}
+}
+
+.form-filters {
+	margin-bottom: 1rem;
+	h4,
+	.filter-reset {
+		margin: 1rem 0;
+	}
+	.filter-reset {
+		display: block;
+		text-align: right;
+		font-weight: bold;
+		line-height: 3rem;
+	}
+	[class*='col-']:first-child {
+		border-right: 1px solid #ddd;
+	}
+	.row {
+		border-bottom: 1px solid #ddd;
+	}
+	.btn--nacac-blue {
+		padding: .6rem 1.2rem;
+	  border: 1px solid transparent;
+	  vertical-align: middle;
+	}
+	.filter-label {
+		margin: 1rem 0;
+		text-align: center;
+		line-height: 3rem;
+	}
+	.filter {
+		display: inline-block;
+		margin: 1rem 1rem 1rem 0;
+		padding: 0 1.2rem;
+		border-radius: .8rem;
+		background: #2e2670;
+		color: #fff;
+		font-size: 1.414rem;
+		line-height: 3rem;
+	}
+	.filter-close {
+		float: right;
+		font-size: 2rem;
+		margin-left: 2rem;
+		cursor: pointer;
+	}
+
+	// bootstrap stuff
+	.form-control {
+	  display: block;
+	  width: 100%;
+	  height: 34px;
+	  padding: 6px 12px;
+	  font-size: 14px;
+	  line-height: 1.42857143;
+	  color: #555555;
+	  background-color: #ffffff;
+	  background-image: none;
+	  border: 1px solid #cccccc;
+	  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	}
+	.form-control:focus {
+	  border-color: #66afe9;
+	  outline: 0;
+	  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+	  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+	}
+	.form-control::-moz-placeholder {
+	  color: #999999;
+	  opacity: 1;
+	}
+	.form-control:-ms-input-placeholder {
+	  color: #999999;
+	}
+	.form-control::-webkit-input-placeholder {
+	  color: #999999;
+	}
+	.form-control::-ms-expand {
+	  border: 0;
+	  background-color: transparent;
+	}
+
+	@media (min-width: 768px) {
+	  .form-inline .form-group {
+	    display: inline-block;
+	    margin-bottom: 0;
+	    vertical-align: middle;
+	  }
+	  .form-inline .form-control {
+	    display: inline-block;
+	    width: auto;
+	    vertical-align: middle;
+	  }
+	  .form-inline .input-group {
+	    display: inline-table;
+	    vertical-align: middle;
+	  }
+	  .form-inline .input-group .input-group-addon,
+	  .form-inline .input-group .input-group-btn,
+	  .form-inline .input-group .form-control {
+	    width: auto;
+	  }
+	  .form-inline .input-group > .form-control {
+	    width: 100%;
+	  }
+	}
+
+}

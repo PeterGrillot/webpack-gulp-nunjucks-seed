@@ -1,0 +1,212 @@
+html {
+  font-family: $sans;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: $text_slate;
+  font-size: 1.6rem;
+}
+
+p {
+  line-height: 2.3rem;
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+}
+
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $condensed;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 5.656rem;
+  line-height: 7rem;
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 4.242rem;
+  line-height: 4.5rem;
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2rem;
+  font-size: 2.121rem;
+  line-height: 3rem;
+  margin-top: 3rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.414rem;
+  font-family: $sans;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 0.707rem;
+  font-family: $sans;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 0.4713333333333333rem;
+  font-family: $sans;
+  font-weight: 700;
+}
+h1, h2 {
+  // letter-spacing: 1px;
+    font-size: 200%;
+}
+h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: inherit;
+}
+[class*="__byline"] {
+  font-family: $serif;
+  font-size: 2rem;
+}
+
+.hero__byline {
+  font-size: 2.75rem;
+}
+
+[class*="__byline"] + h1 {
+  margin-top: 0;
+}
+
+
+/* Tables */
+
+table {
+  margin-top: 1.5rem;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  padding: 0;
+  line-height: 33px;
+}
+
+
+/* Code blocks */
+
+code {
+  vertical-align: bottom;
+}
+
+/* ul and ol */
+
+ul{
+	padding:0;
+	margin:0;
+}
+
+.text--blue{
+  color: $nacac_light-blue;
+}
+.text--orange{
+  color: $nacac_orange;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.small {
+  font-size: 85%;
+}
+
+// large red numbers
+.ol-styled,
+.ul-icons {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  li {
+    position: relative;
+    margin-bottom: 2.4rem;
+    padding-left: 4.6rem;
+    // counter-increment: step-counter;
+    &:before {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      // float: left;
+      // content: counter(step-counter);
+      width: 3.6rem;
+      height: 3.6rem;
+      text-align: center;
+      font: {
+        size: 2.4rem;
+        weight: 700;
+      }
+      line-height: 3.6rem;
+      color: #fff;
+      background-color: $nacac_burgundy;
+      border-radius: 50%;
+    }
+    // span {
+    //   display: block;
+    //   // padding: .6rem 0 0 4.6rem;
+    // }
+  }
+}
+
+.ol-styled {
+  li {
+    padding-top: .6rem;
+    counter-increment: step-counter;
+    &:before {
+      content: counter(step-counter);
+    }
+  }
+}
+
+.ul-icons {
+  li {
+    &:before {
+      font: {
+        family: FontAwesome;
+        size: 2rem;
+      }
+      position: absolute;
+    }
+     &.icon-location:before {content: "\f041";}
+        &.icon-hours:before {content: "\f017";}  
+    &.icon-direction:before {content: "\f14e";}  
+      &.icon-contact:before {content: "\f1fa";}  
+
+  }
+  address {
+    font-style: normal;
+  }
+}
+
+.block-lg {
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}

@@ -1,0 +1,683 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#6AAEE6">
+	<title>Brightfind App Seed</title>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:700italic|Oswald|Istok+Web:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/stylesheets/bootstrap.css">
+	
+		<link rel="stylesheet" href="/stylesheets/fair.css">
+	
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <svg style="display: none;">
+  <defs>
+  <symbol id="icon-sign" viewBox="0 0 60 60">
+    <path d="M30,0A30,30,0,1,0,60,30,30,30,0,0,0,30,0Zm1.16,45.89H27.74V29.16H17.52l-4-4,4-4H27.74V14.11h3.42V45.89Zm11.32-21H32.35v-8H42.48l4,4Z"/>
+  </symbol>
+  <symbol id="icon-info" viewBox="0 0 60 60">
+    <path d="M30,0A30,30,0,1,0,60,30,30,30,0,0,0,30,0Zm4.65,28.8V44.26H29.84V28.8H24.39V24H34.65V28.8Zm-2.54-8.87a3.21,3.21,0,1,1,3.21-3.21A3.21,3.21,0,0,1,32.11,19.93Z"/>
+  </symbol>
+  <symbol id="icon-flow-chart" viewBox="0 0 60 60">
+    <path d="M30,0A30,30,0,1,0,60,30,30,30,0,0,0,30,0ZM24.37,15.22H35.63v8H24.37v-8Zm0.14,29.56H13.26v-8H24.51v8ZM20.69,31.39v3.7H18.1V28.82H28.72V24.69h2.56v4.13H41.9v6.27H39.34v-3.7H20.69Zm26,13.39H35.49v-8H46.74v8Z"/>
+  </symbol>
+  <symbol id="icon-checkbox" viewBox="0 0 60 60">
+    <path d="M30 0a30 30 0 1 0 30 30A30 30 0 0 0 30 0zm13.5 43.58H16.34V16.42h25.32l-3 3H19.38v21.12h21.08v-8.32l3-3v14.4zm-11.66-5.74l-4.29-4.29-5.48-5.49 4.29-4.29 5.48 5.48L44.49 16.6l4.29 4.29z"/>
+  </symbol>
+  <symbol id="icon-phone" viewBox="0 0 60 60">
+    <path d="M37.59,12.42H22.41a2.14,2.14,0,0,0-2.14,2.14V45.44a2.14,2.14,0,0,0,2.14,2.14H37.59a2.14,2.14,0,0,0,2.14-2.14V14.56A2.14,2.14,0,0,0,37.59,12.42ZM27,14.88h6v1.71H27V14.88Zm3,30a1.55,1.55,0,1,1,1.55-1.55A1.55,1.55,0,0,1,30,44.91Zm7.43-4.49H22.57V19.26H37.43V40.42Z"/><path d="M30,0A30,30,0,1,0,60,30,30,30,0,0,0,30,0ZM40.58,45.44a3,3,0,0,1-3,3H22.41a3,3,0,0,1-3-3V14.56a3,3,0,0,1,3-3H37.59a3,3,0,0,1,3,3V45.44Z"/>
+  </symbol>
+  <symbol id="icon-phone-tap" viewBox="0 0 60 60">
+    <path d="M30,0A30,30,0,1,0,60,30,30,30,0,0,0,30,0Zm7.59,48.43H22.41a3,3,0,0,1-3-3V14.56a3,3,0,0,1,3-3H37.59a3,3,0,0,1,3,3V27.5a2.62,2.62,0,0,0-.72,1.07l-0.12,0h0v-14a2.14,2.14,0,0,0-2.14-2.14H22.41a2.14,2.14,0,0,0-2.14,2.14V45.44a2.14,2.14,0,0,0,2.14,2.14H37.59a2.13,2.13,0,0,0,2-1.5l0.8,0.28A3,3,0,0,1,37.59,48.43Zm-7.86-27A4.32,4.32,0,0,0,29.09,30L34,36.4l1.13,1.47a3.26,3.26,0,0,0-.72-0.08,2.9,2.9,0,0,0-1.8.62,2.83,2.83,0,0,0-1.1,2h-8.9V19.26H37.43V29l-0.15.1a2.9,2.9,0,0,0-.66.7L34,26.33A4.28,4.28,0,0,0,34,25.77,4.33,4.33,0,0,0,29.72,21.44Zm1.83,21.91A1.55,1.55,0,1,1,30,41.81,1.55,1.55,0,0,1,31.55,43.36ZM27,16.59V14.88h6v1.71H27ZM53,39.72l-8,6.1A1.63,1.63,0,0,1,43.4,46l-9.19-3.19a2.23,2.23,0,0,1-1.49-2.2,1.85,1.85,0,0,1,.11-0.51h0v0a1.54,1.54,0,0,1,.11-0.24h0l0.06-.1h0a1.54,1.54,0,0,1,.33-0.36,1.72,1.72,0,0,1,.44-0.24h0l0.15,0h0a1.61,1.61,0,0,1,.34-0.06h0a2.05,2.05,0,0,1,.77.11l3.62,1.26L35,35.62,30,29.17a2.09,2.09,0,0,1-.46-1.46,1.63,1.63,0,0,1,.64-1.24,1.59,1.59,0,0,1,1.39-.27,2.28,2.28,0,0,1,1.32.88l5.49,7.18L38.79,34l-0.92-1.21a2.1,2.1,0,0,1-.46-1.46,1.63,1.63,0,0,1,.64-1.24,1.59,1.59,0,0,1,1.39-.27l0.28,0.09h0a2.24,2.24,0,0,1,.85.58h0a2.67,2.67,0,0,1,.19.21l0.87,1.13L42,31.53l-0.62-.81A1.83,1.83,0,0,1,41,29.45a1.42,1.42,0,0,1,.56-1.09,1.4,1.4,0,0,1,1.21-.26,1.94,1.94,0,0,1,1.14.75l0.59,0.77,0.36-.27a1.57,1.57,0,0,1-.34-1.09A1.22,1.22,0,0,1,45,27.34a1.19,1.19,0,0,1,1-.2,1.72,1.72,0,0,1,1,.66l2.09,2.73a14.27,14.27,0,0,1,1.6,2.65l2.52,5.42a1,1,0,0,1,.08.63A0.81,0.81,0,0,1,53,39.72Z"/> 
+  </symbol>
+  <symbol id="icon-users" viewBox="0 0 60 60">
+    <path d="M0,30A30,30,0,1,1,30,60,30,30,0,0,1,0,30ZM23.08,41.36h2.31c0-3.58-.14-4.1,2-4.6,3.32-.77,6.46-1.49,7.6-4a4.81,4.81,0,0,0-.36-4.4C32.3,23.9,31.71,20.08,33,17.88c1.55-2.58,6.25-2.59,7.81,0,1.33,2.24.73,6-1.64,10.42a4.79,4.79,0,0,0-.39,4.41c1.14,2.52,4.24,3.23,7.54,4,2.27,0.52,2.12,1,2.12,4.62h2.3c0-.51,0-1,0-1.43,0-2.91-.23-4.59-3.67-5.38-3.89-.9-7.72-1.7-5.88-5.1,5.46-10.08,1.56-15.79-4.31-15.79s-9.76,5.5-4.31,15.79c1.79,3.38-1.91,4.18-5.88,5.1S23.08,37.55,23.08,41.36Zm-13.86,0h2.3c0-3.32-.32-2.4,3.16-3.42,1.76-.51,3.31-1.25,4-2.79a4.15,4.15,0,0,0-.28-3.81c-1.65-3.12-2.11-5.84-1.23-7.3a3.1,3.1,0,0,1,4.88,0c1.62,2.71-1.38,6.9-1.77,8.63h2.42c0.76-1.73,2.09-3.83,2.09-6.76,0-3.48-2.27-5.37-5.19-5.37-4.32,0-7.32,4.13-3.23,11.85C17.72,35,14.95,35.56,12,36.24c-2.58.6-2.75,1.86-2.75,4C9.21,40.62,9.22,41,9.22,41.36Z"/>
+  </symbol>
+  <symbol id="icon-search" viewBox="0 0 60 60">
+    <path d="M0,30A30,30,0,1,1,30,60,30,30,0,0,1,0,30ZM47,40.94l-9.76-9.76A12.8,12.8,0,1,0,31,37.32l9.85,9.85C43.62,47.4,47.29,43.83,47,40.94Zm-21.3-6.76a8.55,8.55,0,1,1,8.55-8.55A8.56,8.56,0,0,1,25.74,34.18Z"/>
+  </symbol>
+
+  <symbol id="icon-arrow-left" viewBox="0 0 24 24">
+    <polyline fill="none" stroke="#36424A" stroke-miterlime="10" class="st0" points="17.4,1.2 6.6,12 17.3,22.8 "/>
+  </symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+    <style type="text/css">
+      .st0{fill:none;stroke:#36424A;stroke-miterlimit:10;}
+    </style>
+    <polyline class="st0" points="6.6,22.8 17.4,12 6.7,1.2 "/>
+  </symbol>
+  
+  <symbol id="logo-ncf" viewBox="0 0 220 119">
+    <g>
+    <path fill="#95C93F" d="M214.8 82.3c0 0-35.4-52.4-88.6-56l6.2 9.2c0 0 24.9 9.7 41.5 38.6 0 0-8-26.7-24.3-35.4 0 0 23.1 9 38.1 20.9S214.8 82.3 214.8 82.3z"/>
+    <polygon fill="#F6DB3E" points="101.3 13.5 115 27.8 105.8 39.4 122.3 34.3 131.4 52.7 132.5 30.9 151.2 19.7 131.1 20.1 131.4 0 118.9 18.4 "/>
+    <path fill="#0884C7" d="M16 42.9c-0.1-0.2-0.2-0.5-0.4-0.7 -0.2-0.3-0.3-0.5-0.5-0.8L5.8 28.3h-3v18h2.6V31.7c0.1 0.3 0.2 0.5 0.3 0.7 0.1 0.2 0.3 0.4 0.4 0.6l9.5 13.3h2.9v-18H16V42.9z"/>
+    <path fill="#0884C7" d="M63.7 28.3l-7.4 18h2.8l1.4-3.5h9.3l1.4 3.5h2.9l-7.4-18H63.7zM61.5 40.4l3.8-9.5 3.7 9.5H61.5z"/>
+    <path fill="#0884C7" d="M88.8 39.7c-0.1 1.5-0.6 2.7-1.6 3.6 -1.1 0.9-2.4 1.4-4 1.4 -1.9 0-3.4-0.6-4.6-2 -1.1-1.3-1.7-3.1-1.7-5.3 0-2.4 0.5-4.2 1.7-5.4 1.1-1.3 2.7-1.9 4.7-1.9 1.5 0 2.7 0.3 3.7 1 1 0.6 1.6 1.6 1.8 2.7h2.6c-0.2-1.8-1.1-3.2-2.5-4.3 -1.4-1.1-3.3-1.6-5.6-1.6 -2.9 0-5.1 0.8-6.8 2.5C74.9 32 74 34.2 74 37c0 3.1 0.8 5.5 2.4 7.2s3.8 2.6 6.6 2.6c2.4 0 4.4-0.6 6-1.9 1.5-1.3 2.4-3.1 2.5-5.3C91.5 39.7 88.8 39.7 88.8 39.7z"/>
+    <path fill="#0884C7" d="M46.7 30.1c-0.5 0.1-0.9 0.2-1.3 0.3C45.9 30.3 46.3 30.2 46.7 30.1z"/>
+    <path fill="#0884C7" d="M44.9 30.7L44.9 30.7c0.2-0.1 0.4-0.2 0.6-0.3 0.4-0.2 0.8-0.3 1.3-0.3 0.4 0 0.7-0.1 1.1-0.1 1.5 0 2.7 0.3 3.7 1s1.6 1.6 1.8 2.7h2.6c-0.1-0.8-0.4-1.6-0.8-2.4 -0.4-0.8-1-1.4-1.7-1.9 -1.4-1.1-3.3-1.6-5.6-1.6 -1.9 0-3.4 0.3-4.8 1 -4.2 1.3-7.7 2.9-10.6 4.6l0 0h0l-2.1-5.2h-3l-7.4 18h1.6 0 1.1l0.1-0.3c1.1-2 4.8-7.8 13.5-12.2 -2.6 2.8-4.8 6.9-4.5 12.5h2.2C33.6 35 44.4 30.8 44.9 30.7zM30.9 35.6l-0.3-0.7c-1.9 1.3-3.3 2.6-4.6 3.8l0 0 3.1-7.8 1.6 4c0 0 0 0 0 0L30.9 35.6c0.6-0.5 1.5-1 2.1-1.4v0C32.3 34.7 31.5 35.2 30.9 35.6z"/>
+    <path fill="#0884C7" d="M53.6 39.7c-0.1 1.5-0.6 2.7-1.7 3.7 -1.1 0.9-2.4 1.4-4 1.4 -1.9 0-3.4-0.7-4.6-2 -1.2-1.3-1.8-3.1-1.8-5.3 0-0.7 0-1.3 0.2-1.9 -0.3 0.2-0.5 0.4-0.8 0.6 -0.8 0.8-1.7 2.1-1.9 3.8 0.3 1.8 1.1 3.2 2.1 4.4 1.6 1.7 3.8 2.6 6.6 2.6 2.4 0 4.4-0.6 6-1.9 1.6-1.3 2.4-3 2.5-5.3L53.6 39.7 53.6 39.7z"/>
+    <path fill="#20386D" d="M17.7 82.1L6.2 66.5v15.6H1.1V58.2h5.2l11.1 15v-15h5.1v23.9H17.7z"/>
+    <path fill="#20386D" d="M37.6 82.1v-1.8c-1.2 1.4-3.2 2.2-5.5 2.2 -2.8 0-6-1.9-6-5.7 0-4.1 3.3-5.6 6-5.6 2.3 0 4.3 0.8 5.5 2.1V71c0-1.8-1.5-2.9-3.8-2.9 -1.9 0-3.6 0.7-5.1 2l-1.7-3c2.1-1.9 4.8-2.7 7.6-2.7 3.9 0 7.6 1.6 7.6 6.6v11.2H37.6zM37.6 77.9v-2.2c-0.8-1-2.2-1.5-3.7-1.5 -1.8 0-3.3 0.9-3.3 2.6 0 1.6 1.5 2.5 3.3 2.5C35.4 79.4 36.9 78.9 37.6 77.9z"/>
+    <path fill="#20386D" d="M47.6 77.8v-9h-2.9v-4h2.9V60h4.6v4.7h3.5v4h-3.5v7.8c0 1.1 0.6 1.9 1.6 1.9 0.7 0 1.3-0.3 1.6-0.5l1 3.4c-0.7 0.6-1.9 1.1-3.8 1.1C49.3 82.5 47.6 80.9 47.6 77.8z"/>
+    <path fill="#20386D" d="M60.3 60.2c0-1.5 1.3-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7C61.6 62.9 60.3 61.7 60.3 60.2zM60.8 82.1V64.8h4.6v17.3H60.8z"/>
+    <path fill="#20386D" d="M69.8 73.4c0-4.9 3.4-9.1 9.1-9.1 5.7 0 9.2 4.2 9.2 9.1 0 4.9-3.4 9.1-9.2 9.1C73.2 82.5 69.8 78.3 69.8 73.4zM83.4 73.4c0-2.7-1.6-5-4.4-5 -2.8 0-4.4 2.3-4.4 5 0 2.7 1.6 5.1 4.4 5.1C81.8 78.5 83.4 76.1 83.4 73.4z"/>
+    <path fill="#20386D" d="M104.2 82.1V71.6c0-2.4-1.3-3.2-3.2-3.2 -1.8 0-3.2 1-3.9 2v11.7h-4.6V64.8H97V67c1.1-1.3 3.2-2.7 6.1-2.7 3.8 0 5.6 2.2 5.6 5.5v12.2H104.2z"/>
+    <path fill="#20386D" d="M123.7 82.1v-1.8c-1.2 1.4-3.2 2.2-5.5 2.2 -2.8 0-6-1.9-6-5.7 0-4.1 3.3-5.6 6-5.6 2.3 0 4.3 0.8 5.5 2.1V71c0-1.8-1.5-2.9-3.8-2.9 -1.9 0-3.6 0.7-5.1 2l-1.7-3c2.1-1.9 4.8-2.7 7.6-2.7 3.9 0 7.6 1.6 7.6 6.6v11.2H123.7zM123.7 77.9v-2.2c-0.8-1-2.2-1.5-3.7-1.5 -1.8 0-3.3 0.9-3.3 2.6 0 1.6 1.5 2.5 3.3 2.5C121.5 79.4 122.9 78.9 123.7 77.9z"/>
+    <path fill="#20386D" d="M133.7 82.1V58.2h4.6v23.9H133.7z"/>
+    <path fill="#20386D" d="M0 100c0-7.4 5.6-12.4 12.7-12.4 5.3 0 8.3 2.9 10 5.8l-4.4 2.2c-1-1.9-3.2-3.5-5.6-3.5 -4.3 0-7.5 3.3-7.5 7.9s3.2 7.9 7.5 7.9c2.5 0 4.6-1.5 5.6-3.5l4.4 2.1c-1.7 3-4.7 5.9-10 5.9C5.6 112.4 0 107.4 0 100z"/>
+    <path fill="#20386D" d="M24.6 103.3c0-4.9 3.4-9.1 9.1-9.1 5.7 0 9.2 4.2 9.2 9.1 0 4.9-3.4 9.1-9.2 9.1C28 112.4 24.6 108.2 24.6 103.3zM38.2 103.3c0-2.7-1.6-5-4.4-5s-4.4 2.3-4.4 5c0 2.7 1.6 5.1 4.4 5.1S38.2 106 38.2 103.3z"/>
+    <path fill="#20386D" d="M47.3 112V88h4.6V112H47.3z"/>
+    <path fill="#20386D" d="M57.4 112V88h4.6V112H57.4z"/>
+    <path fill="#20386D" d="M66.3 103.3c0-5 3.7-9.1 9-9.1 5.2 0 8.7 3.9 8.7 9.5v1H71.1c0.3 2.2 2 4 5 4 1.5 0 3.5-0.6 4.6-1.7l2 2.9c-1.7 1.6-4.4 2.4-7.1 2.4C70.3 112.4 66.3 108.9 66.3 103.3zM75.3 97.8c-2.8 0-4.1 2.1-4.3 3.8h8.5C79.5 100 78.3 97.8 75.3 97.8z"/>
+    <path fill="#20386D" d="M87.9 116.4l2-3.3c1.4 1.5 3.2 2.2 5.4 2.2 2.2 0 4.8-1 4.8-4.4v-1.8c-1.4 1.7-3.2 2.7-5.3 2.7 -4.3 0-7.6-3-7.6-8.8 0-5.7 3.3-8.8 7.6-8.8 2.1 0 3.9 0.9 5.3 2.7v-2.2h4.6v16.1c0 6.6-5.1 8.2-9.4 8.2C92.4 119 90.1 118.3 87.9 116.4zM100.2 105.8v-5.6c-0.8-1.1-2.4-2-3.9-2 -2.6 0-4.4 1.8-4.4 4.8 0 3 1.8 4.8 4.4 4.8C97.8 107.8 99.4 106.9 100.2 105.8z"/>
+    <path fill="#20386D" d="M108.2 103.3c0-5 3.7-9.1 9-9.1 5.2 0 8.7 3.9 8.7 9.5v1h-12.9c0.3 2.2 2 4 5 4 1.5 0 3.5-0.6 4.6-1.7l2 2.9c-1.7 1.6-4.4 2.4-7.1 2.4C112.1 112.4 108.2 108.9 108.2 103.3zM117.1 97.8c-2.8 0-4.1 2.1-4.3 3.8h8.5C121.3 100 120.1 97.8 117.1 97.8z"/>
+    <path fill="#20386D" d="M141.4 112V88h16.9v4.5h-11.8v5.1h11.6v4.5h-11.6v9.9H141.4z"/>
+    <path fill="#20386D" d="M172.2 112v-1.8c-1.2 1.4-3.2 2.2-5.5 2.2 -2.8 0-6-1.9-6-5.7 0-4.1 3.3-5.6 6-5.6 2.3 0 4.3 0.8 5.5 2.1v-2.3c0-1.8-1.5-2.9-3.8-2.9 -1.9 0-3.6 0.7-5.1 2l-1.7-3c2.1-1.9 4.8-2.7 7.6-2.7 3.9 0 7.6 1.6 7.6 6.6V112H172.2zM172.2 107.8v-2.2c-0.8-1-2.2-1.5-3.7-1.5 -1.8 0-3.3 0.9-3.3 2.6 0 1.6 1.5 2.5 3.3 2.5C170 109.3 171.4 108.8 172.2 107.8z"/>
+    <path fill="#20386D" d="M181.8 90.1c0-1.5 1.3-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7s-1.2 2.7-2.7 2.7C183.1 92.8 181.8 91.6 181.8 90.1zM182.3 112V94.6h4.6V112H182.3z"/>
+    <path fill="#20386D" d="M192.3 112V94.6h4.6V97c1.2-1.5 3.4-2.8 5.5-2.8v4.4c-0.3-0.1-0.8-0.1-1.3-0.1 -1.5 0-3.5 0.9-4.3 2V112H192.3z"/>
+    <path fill="#20386D" d="M204.8 109.7l2-3.2c1.3 1.2 3.8 2.4 6 2.4 2 0 2.9-0.8 2.9-1.9 0-2.9-10.3-0.5-10.3-7.4 0-2.9 2.5-5.5 7.1-5.5 2.9 0 5.3 1 7 2.4l-1.8 3.1c-1-1.1-3-2-5.1-2 -1.7 0-2.7 0.8-2.7 1.7 0 2.6 10.3 0.4 10.3 7.4 0 3.2-2.7 5.6-7.5 5.6C209.5 112.4 206.6 111.4 204.8 109.7z"/>
+    </g>
+  </symbol>
+  <symbol id="logo-ncf-utility" viewBox="0 0 220 119">
+    <g>
+    <path fill="#95C93F" d="M214.8 82.3c0 0-35.4-52.4-88.6-56l6.2 9.2c0 0 24.9 9.7 41.5 38.6 0 0-8-26.7-24.3-35.4 0 0 23.1 9 38.1 20.9S214.8 82.3 214.8 82.3z"/>
+    <polygon fill="#F6DB3E" points="101.3 13.5 115 27.8 105.8 39.4 122.3 34.3 131.4 52.7 132.5 30.9 151.2 19.7 131.1 20.1 131.4 0 118.9 18.4 "/>
+    <path fill="#FFFFFF" d="M16 42.9c-0.1-0.2-0.2-0.5-0.4-0.7 -0.2-0.3-0.3-0.5-0.5-0.8L5.8 28.3h-3v18h2.6V31.7c0.1 0.3 0.2 0.5 0.3 0.7 0.1 0.2 0.3 0.4 0.4 0.6l9.5 13.3h2.9v-18H16V42.9z"/>
+    <path fill="#FFFFFF" d="M63.7 28.3l-7.4 18h2.8l1.4-3.5h9.3l1.4 3.5h2.9l-7.4-18H63.7zM61.5 40.4l3.8-9.5 3.7 9.5H61.5z"/>
+    <path fill="#FFFFFF" d="M88.8 39.7c-0.1 1.5-0.6 2.7-1.6 3.6 -1.1 0.9-2.4 1.4-4 1.4 -1.9 0-3.4-0.6-4.6-2 -1.1-1.3-1.7-3.1-1.7-5.3 0-2.4 0.5-4.2 1.7-5.4 1.1-1.3 2.7-1.9 4.7-1.9 1.5 0 2.7 0.3 3.7 1 1 0.6 1.6 1.6 1.8 2.7h2.6c-0.2-1.8-1.1-3.2-2.5-4.3 -1.4-1.1-3.3-1.6-5.6-1.6 -2.9 0-5.1 0.8-6.8 2.5C74.9 32 74 34.2 74 37c0 3.1 0.8 5.5 2.4 7.2s3.8 2.6 6.6 2.6c2.4 0 4.4-0.6 6-1.9 1.5-1.3 2.4-3.1 2.5-5.3C91.5 39.7 88.8 39.7 88.8 39.7z"/>
+    <path fill="#FFFFFF" d="M46.7 30.1c-0.5 0.1-0.9 0.2-1.3 0.3C45.9 30.3 46.3 30.2 46.7 30.1z"/>
+    <path fill="#FFFFFF" d="M44.9 30.7L44.9 30.7c0.2-0.1 0.4-0.2 0.6-0.3 0.4-0.2 0.8-0.3 1.3-0.3 0.4 0 0.7-0.1 1.1-0.1 1.5 0 2.7 0.3 3.7 1s1.6 1.6 1.8 2.7h2.6c-0.1-0.8-0.4-1.6-0.8-2.4 -0.4-0.8-1-1.4-1.7-1.9 -1.4-1.1-3.3-1.6-5.6-1.6 -1.9 0-3.4 0.3-4.8 1 -4.2 1.3-7.7 2.9-10.6 4.6l0 0h0l-2.1-5.2h-3l-7.4 18h1.6 0 1.1l0.1-0.3c1.1-2 4.8-7.8 13.5-12.2 -2.6 2.8-4.8 6.9-4.5 12.5h2.2C33.6 35 44.4 30.8 44.9 30.7zM30.9 35.6l-0.3-0.7c-1.9 1.3-3.3 2.6-4.6 3.8l0 0 3.1-7.8 1.6 4c0 0 0 0 0 0L30.9 35.6c0.6-0.5 1.5-1 2.1-1.4v0C32.3 34.7 31.5 35.2 30.9 35.6z"/>
+    <path fill="#FFFFFF" d="M53.6 39.7c-0.1 1.5-0.6 2.7-1.7 3.7 -1.1 0.9-2.4 1.4-4 1.4 -1.9 0-3.4-0.7-4.6-2 -1.2-1.3-1.8-3.1-1.8-5.3 0-0.7 0-1.3 0.2-1.9 -0.3 0.2-0.5 0.4-0.8 0.6 -0.8 0.8-1.7 2.1-1.9 3.8 0.3 1.8 1.1 3.2 2.1 4.4 1.6 1.7 3.8 2.6 6.6 2.6 2.4 0 4.4-0.6 6-1.9 1.6-1.3 2.4-3 2.5-5.3L53.6 39.7 53.6 39.7z"/>
+    <path fill="#20386D" d="M17.7 82.1L6.2 66.5v15.6H1.1V58.2h5.2l11.1 15v-15h5.1v23.9H17.7z"/>
+    <path fill="#20386D" d="M37.6 82.1v-1.8c-1.2 1.4-3.2 2.2-5.5 2.2 -2.8 0-6-1.9-6-5.7 0-4.1 3.3-5.6 6-5.6 2.3 0 4.3 0.8 5.5 2.1V71c0-1.8-1.5-2.9-3.8-2.9 -1.9 0-3.6 0.7-5.1 2l-1.7-3c2.1-1.9 4.8-2.7 7.6-2.7 3.9 0 7.6 1.6 7.6 6.6v11.2H37.6zM37.6 77.9v-2.2c-0.8-1-2.2-1.5-3.7-1.5 -1.8 0-3.3 0.9-3.3 2.6 0 1.6 1.5 2.5 3.3 2.5C35.4 79.4 36.9 78.9 37.6 77.9z"/>
+    <path fill="#20386D" d="M47.6 77.8v-9h-2.9v-4h2.9V60h4.6v4.7h3.5v4h-3.5v7.8c0 1.1 0.6 1.9 1.6 1.9 0.7 0 1.3-0.3 1.6-0.5l1 3.4c-0.7 0.6-1.9 1.1-3.8 1.1C49.3 82.5 47.6 80.9 47.6 77.8z"/>
+    <path fill="#20386D" d="M60.3 60.2c0-1.5 1.3-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7C61.6 62.9 60.3 61.7 60.3 60.2zM60.8 82.1V64.8h4.6v17.3H60.8z"/>
+    <path fill="#20386D" d="M69.8 73.4c0-4.9 3.4-9.1 9.1-9.1 5.7 0 9.2 4.2 9.2 9.1 0 4.9-3.4 9.1-9.2 9.1C73.2 82.5 69.8 78.3 69.8 73.4zM83.4 73.4c0-2.7-1.6-5-4.4-5 -2.8 0-4.4 2.3-4.4 5 0 2.7 1.6 5.1 4.4 5.1C81.8 78.5 83.4 76.1 83.4 73.4z"/>
+    <path fill="#20386D" d="M104.2 82.1V71.6c0-2.4-1.3-3.2-3.2-3.2 -1.8 0-3.2 1-3.9 2v11.7h-4.6V64.8H97V67c1.1-1.3 3.2-2.7 6.1-2.7 3.8 0 5.6 2.2 5.6 5.5v12.2H104.2z"/>
+    <path fill="#20386D" d="M123.7 82.1v-1.8c-1.2 1.4-3.2 2.2-5.5 2.2 -2.8 0-6-1.9-6-5.7 0-4.1 3.3-5.6 6-5.6 2.3 0 4.3 0.8 5.5 2.1V71c0-1.8-1.5-2.9-3.8-2.9 -1.9 0-3.6 0.7-5.1 2l-1.7-3c2.1-1.9 4.8-2.7 7.6-2.7 3.9 0 7.6 1.6 7.6 6.6v11.2H123.7zM123.7 77.9v-2.2c-0.8-1-2.2-1.5-3.7-1.5 -1.8 0-3.3 0.9-3.3 2.6 0 1.6 1.5 2.5 3.3 2.5C121.5 79.4 122.9 78.9 123.7 77.9z"/>
+    <path fill="#20386D" d="M133.7 82.1V58.2h4.6v23.9H133.7z"/>
+    <path fill="#20386D" d="M0 100c0-7.4 5.6-12.4 12.7-12.4 5.3 0 8.3 2.9 10 5.8l-4.4 2.2c-1-1.9-3.2-3.5-5.6-3.5 -4.3 0-7.5 3.3-7.5 7.9s3.2 7.9 7.5 7.9c2.5 0 4.6-1.5 5.6-3.5l4.4 2.1c-1.7 3-4.7 5.9-10 5.9C5.6 112.4 0 107.4 0 100z"/>
+    <path fill="#20386D" d="M24.6 103.3c0-4.9 3.4-9.1 9.1-9.1 5.7 0 9.2 4.2 9.2 9.1 0 4.9-3.4 9.1-9.2 9.1C28 112.4 24.6 108.2 24.6 103.3zM38.2 103.3c0-2.7-1.6-5-4.4-5s-4.4 2.3-4.4 5c0 2.7 1.6 5.1 4.4 5.1S38.2 106 38.2 103.3z"/>
+    <path fill="#20386D" d="M47.3 112V88h4.6V112H47.3z"/>
+    <path fill="#20386D" d="M57.4 112V88h4.6V112H57.4z"/>
+    <path fill="#20386D" d="M66.3 103.3c0-5 3.7-9.1 9-9.1 5.2 0 8.7 3.9 8.7 9.5v1H71.1c0.3 2.2 2 4 5 4 1.5 0 3.5-0.6 4.6-1.7l2 2.9c-1.7 1.6-4.4 2.4-7.1 2.4C70.3 112.4 66.3 108.9 66.3 103.3zM75.3 97.8c-2.8 0-4.1 2.1-4.3 3.8h8.5C79.5 100 78.3 97.8 75.3 97.8z"/>
+    <path fill="#20386D" d="M87.9 116.4l2-3.3c1.4 1.5 3.2 2.2 5.4 2.2 2.2 0 4.8-1 4.8-4.4v-1.8c-1.4 1.7-3.2 2.7-5.3 2.7 -4.3 0-7.6-3-7.6-8.8 0-5.7 3.3-8.8 7.6-8.8 2.1 0 3.9 0.9 5.3 2.7v-2.2h4.6v16.1c0 6.6-5.1 8.2-9.4 8.2C92.4 119 90.1 118.3 87.9 116.4zM100.2 105.8v-5.6c-0.8-1.1-2.4-2-3.9-2 -2.6 0-4.4 1.8-4.4 4.8 0 3 1.8 4.8 4.4 4.8C97.8 107.8 99.4 106.9 100.2 105.8z"/>
+    <path fill="#20386D" d="M108.2 103.3c0-5 3.7-9.1 9-9.1 5.2 0 8.7 3.9 8.7 9.5v1h-12.9c0.3 2.2 2 4 5 4 1.5 0 3.5-0.6 4.6-1.7l2 2.9c-1.7 1.6-4.4 2.4-7.1 2.4C112.1 112.4 108.2 108.9 108.2 103.3zM117.1 97.8c-2.8 0-4.1 2.1-4.3 3.8h8.5C121.3 100 120.1 97.8 117.1 97.8z"/>
+    <path fill="#20386D" d="M141.4 112V88h16.9v4.5h-11.8v5.1h11.6v4.5h-11.6v9.9H141.4z"/>
+    <path fill="#20386D" d="M172.2 112v-1.8c-1.2 1.4-3.2 2.2-5.5 2.2 -2.8 0-6-1.9-6-5.7 0-4.1 3.3-5.6 6-5.6 2.3 0 4.3 0.8 5.5 2.1v-2.3c0-1.8-1.5-2.9-3.8-2.9 -1.9 0-3.6 0.7-5.1 2l-1.7-3c2.1-1.9 4.8-2.7 7.6-2.7 3.9 0 7.6 1.6 7.6 6.6V112H172.2zM172.2 107.8v-2.2c-0.8-1-2.2-1.5-3.7-1.5 -1.8 0-3.3 0.9-3.3 2.6 0 1.6 1.5 2.5 3.3 2.5C170 109.3 171.4 108.8 172.2 107.8z"/>
+    <path fill="#20386D" d="M181.8 90.1c0-1.5 1.3-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7s-1.2 2.7-2.7 2.7C183.1 92.8 181.8 91.6 181.8 90.1zM182.3 112V94.6h4.6V112H182.3z"/>
+    <path fill="#20386D" d="M192.3 112V94.6h4.6V97c1.2-1.5 3.4-2.8 5.5-2.8v4.4c-0.3-0.1-0.8-0.1-1.3-0.1 -1.5 0-3.5 0.9-4.3 2V112H192.3z"/>
+    <path fill="#20386D" d="M204.8 109.7l2-3.2c1.3 1.2 3.8 2.4 6 2.4 2 0 2.9-0.8 2.9-1.9 0-2.9-10.3-0.5-10.3-7.4 0-2.9 2.5-5.5 7.1-5.5 2.9 0 5.3 1 7 2.4l-1.8 3.1c-1-1.1-3-2-5.1-2 -1.7 0-2.7 0.8-2.7 1.7 0 2.6 10.3 0.4 10.3 7.4 0 3.2-2.7 5.6-7.5 5.6C209.5 112.4 206.6 111.4 204.8 109.7z"/>
+    </g>
+  </symbol>
+  </defs>  
+</svg>
+	
+<main>
+
+  
+  <nav class="utility-nav utility-nav-fair">
+	<div class="container">
+		<span class="mobile-nav__logo visible-sm visible-xs">
+			<svg class="logo-ncf-utility">
+				<use xlink:href="#logo-ncf-utility"></use>
+			</svg>
+		</span>
+		<ul class="utility-nav__list">
+			<li class="utility-nav__item">
+				<a href="#">Contact</a>
+			</li>
+			<li class="utility-nav__item">
+				<a href="#">NACAC Main Site</a>
+			</li>
+			<li class="utility-nav__item utility-nav-register">
+				<a href="#">
+					<i class="fa fa-check-circle"></i>
+					<span class="hidden-sm hidden-xs hidden-md">Students</span> Register <span class="hidden-sm hidden-xs hidden-md">for <span class="text-uppercase">Free</span>
+					<i class="fa fa-caret-right"></i></span>
+				</a>
+			</li>
+		</ul>
+		<ul class="utility-nav__social">
+			<li class="utility-nav__social-item">
+				<a href="#"><i class="fa fa-twitter"></i></a>
+			</li>
+			<li class="utility-nav__social-item">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+			</li>
+			<li class="utility-nav__social-item">
+				<a href="#"><i class="fa fa-instagram"></i></a>
+			</li>
+			<li class="utility-nav__social-item">
+				<a href="#"><i class="fa fa-flickr"></i></a>
+			</li>
+		</ul>
+		<span class="utility-search">
+	<span class="utility-search__trigger">
+	</span>
+	<span class="utility-search__close">
+		<i class="fa fa-times"></i>
+	</span>
+	<div id="utility-search" class="utility-search__wrapper">
+	    <form class="utility-search__form">
+	        <input class="utility-search__input" type="search">
+	        <a class="utility-search__submit">
+	            <i class="fa fa-search"></i>
+	        </a>
+	    </form>
+	</div>
+</span>
+
+	</div>
+</nav>
+  
+  <a class="primary-nav__trigger">
+	<span class="menu-text">Menu</span>
+	<div class="trigger__icon">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</a>
+<nav class="primary-nav primary-nav-fair">
+	<div class="container">
+		<ul class="primary-nav__list">
+			
+			<li class="primary-nav__logo">
+				<a href="/fair">
+					<svg class="logo-ncf">
+						<use xlink:href="#logo-ncf"></use>
+					</svg>
+				</a>
+			</li>
+			
+			
+				<li class="primary-nav__item">
+					<a href="#" class="primary-nav--children" data-id="1">Learn <i class="fa fa-caret-down"></i></a>
+					<ul class="primary-nav__interior"></ul>
+				</li>
+				<li class="primary-nav__item">
+					<a href="#" class="primary-nav--children" data-id="1">Attend <i class="fa fa-caret-down"></i></a>
+					<ul class="primary-nav__interior"></ul>
+				</li>
+				<li class="primary-nav__item">
+					<a href="#" class="primary-nav--children" data-id="1">Exhibit <i class="fa fa-caret-down"></i></a>
+					<ul class="primary-nav__interior"></ul>
+				</li>
+				<li class="primary-nav__item">
+					<a href="#" class="primary-nav--children" data-id="1">Support <i class="fa fa-caret-down"></i></a>
+					<ul class="primary-nav__interior"></ul>
+				</li>
+			
+		</ul>
+	</div>
+</nav>
+
+  <div class="hero__wrapper hero-fair">
+	<div class="hero__background-image">
+		<img class="b-lazy" data-src="/images/fair/hero_banner.jpg" alt="">
+	</div>
+	<div class="hero__content">
+		<h1 class="hero__title hero">National College Fairs <span class="orange">Registration</soan></h1>
+		<h3 class="hero__byline">Requesting information from multiple colleges/universities at NACAC College Fairs just got a whole lot easier! Register online <span class="text-uppercase orange">for free</span> prior to arrival and skip the lines!</h3>
+		<div class="row">
+      <div class="col-sm">
+        <a href="#" class="hero-icon-block">
+          <svg class="icon-checkbox">
+            <use xlink:href="#icon-checkbox"></use>
+          </svg>
+          Register for FREE
+        </a>
+      </div>
+      <div class="col-sm">
+        <a href="#" class="hero-icon-block">
+          <svg class="icon-users">
+            <use xlink:href="#icon-users"></use>
+          </svg>
+          Exhbitor Registration
+        </a>
+      </div>
+    </div>
+	</div><!-- hero__content -->
+</div><!-- .hero-fair -->
+
+
+  <article class="article__row content__row article--white">
+    <div class="container">
+      <ol class="breadcrumb">
+	<li><a href="#">Home</a></li>
+	<li class="active"></li>
+</ol>
+      <div class="col-md-7">
+        <h2>Registration Process</h2>
+        <p>Student registration is an easier and much faster way for college representatives to follow up with you after the fair. You won't have to stand in line or fill out information cards, allowing you to focus on finding the right school for you!</p>
+        <ol class="ol-styled">
+          <li>Visit <a href="#">www.gotomyncf.com</a>.</li>
+          <li>Select the fair you wish to attend.</li>
+          <li>Complete all required fields and submit your information.</li>
+          <li>Print out your barcode and BRING it to the fair!</li>
+        </ol>
+        <p>
+          Once you register, there is no need to stand in the student registration line at the fair!
+        </p>
+        <p class="small">
+          NACAC doesn not sell your information to third parties. NACAC is committed to maintaining high standards that foster ethical and social responsibility, as outlined in the <a href="#">NACAC Statement of Principles of Good Practice (SPGP)</a>.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <header class="article__header margin-bot-30">
+          <h2>Fairs <span class="orange">Near You</span></h2>
+        </header>
+        <ul class="fair-events">
+          
+          <li>
+            <img class="fair-event-icon" src="/images/icons/states/pa.svg" alt="Pennsylvania">
+            <div class="fair-event-content">
+              <h3><a href="#">Rochester National College Fair</a></h3>
+              <p>March 13 &amp; 14, 2016 | Rochester, NY</p>
+              <p>
+                <a href="#" class="btn btn-simple">Fair Details</a>
+                <a href="#" class="btn btn-simple-blue">Register for Free</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <img class="fair-event-icon" src="/images/icons/states/pa.svg" alt="Pennsylvania">
+            <div class="fair-event-content">
+              <h3><a href="#">Rochester National College Fair</a></h3>
+              <p>March 13 &amp; 14, 2016 | Rochester, NY</p>
+              <p>
+                <a href="#" class="btn btn-simple">Fair Details</a>
+                <a href="#" class="btn btn-simple-blue">Register for Free</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <img class="fair-event-icon" src="/images/icons/states/pa.svg" alt="Pennsylvania">
+            <div class="fair-event-content">
+              <h3><a href="#">Rochester National College Fair</a></h3>
+              <p>March 13 &amp; 14, 2016 | Rochester, NY</p>
+              <p>
+                <a href="#" class="btn btn-simple">Fair Details</a>
+                <a href="#" class="btn btn-simple-blue">Register for Free</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="fair-event-content">
+              <a href="#" class="btn btn-simple-blue">View All Fairs Near You</a>
+            </div>
+          </li>
+        </ul>
+
+
+
+
+      </div>
+    </div>
+  </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <article class="article__row article--bluegrey">
+    <div class="container">
+      
+      <div class="row">
+	<div class="col-sm-3 focus-testimonial__image col-md-push-9">
+		<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/shared/president_profile.jpg" data-src-sm="/images/shared/president_profile.jpg">
+	</div>
+	<div class="col-sm-9 focus-testimonial__content col-md-pull-3">
+		<div class="article__header">
+			<h2>
+				
+					Parents
+				
+			</h2>
+			
+				<p>Parents can also register as a way to get the information to colleges and universities on behalf of their children.</p><p>This can be helpful if your children are not able to attend a college fair, or if they do come together, but split up during the fair as a way to talk to more colleges in the given time period.</p>
+			
+			<a href="#" class="btn btn--nacac-blue">Read More</a>
+		</div>
+	</div>
+</div>
+
+    </div>
+  </article>
+
+
+
+  <article class="article__row article--white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Counselors</h2>
+          <p>Counselors can register as a way for collegs and universities to send them more information that would be helpful for the students.</p>
+          <p>
+            <a href="#" class="btn btn--nacac-blue">Register for free</a>
+          </p>
+          <h3>Bulk Registration and Importing Student Data</h3>
+          <p>
+            At select college fairs, couselors have the option to import all student data to a single NCF database, making it easier for students and cousnelors to access their registration information. This step-by-step guide will walk you through the process if your school attends some of these fairs.
+          </p>
+          <p>
+            To encourage your district to adopt this service, contact the Technology Resource Corporation.
+          </p>
+          <p>
+            <a href="#" class="btn btn--nacac-blue btn-wrap">Learn more about bulk registration</a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <div class="form-block article--bluegrey">
+            <h3>Want information about College Fairs sent directly to your inbox?</h3>
+            <p>Sign up now for updates!</p>
+            <form action="#">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" class="form-control" id="first-name">
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" class="form-control" id="last-name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="article__row article--bluegrey">
+    <div class="container">
+      <header class="article__header">
+        <h1>Registration Information</h1>
+        <p>
+          Here to help you with the registration process lorem ipsum dolor site amet.
+        </p>
+      </header>
+      <section class="card-block__row">
+        <div class="row">
+          
+          <div class="card-block col-sm">
+	<header class="card-block__header b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/shared/card-national.jpg">	
+		
+				<h2>National College Fairs Registration FAQs</h2>
+		
+	</header>
+	<div class="card-block__text">
+		<p>Pellentesque habitant morbi tristiqueVestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+	</div>
+	
+	<footer class="card-block__footer">
+		<a href="#" class="btn btn--clear">Learn More</a>
+	</footer>
+	
+</div>
+          
+          <div class="card-block col-sm">
+	<header class="card-block__header b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/shared/card-performing.jpg">	
+		
+				<h2>College Fair Checklist</h2>
+		
+	</header>
+	<div class="card-block__text">
+		<p>Pellentesque habitant morbi tristiqueVestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+	</div>
+	
+	<footer class="card-block__footer">
+		<a href="#" class="btn btn--clear">Learn More</a>
+	</footer>
+	
+</div>
+          
+          <div class="card-block col-sm">
+	<header class="card-block__header b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/shared/card-stem.jpg">	
+		
+				<h2>Registration Guide</h2>
+		
+	</header>
+	<div class="card-block__text">
+		<p>Pellentesque habitant morbi tristiqueVestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+	</div>
+	
+	<footer class="card-block__footer">
+		<a href="#" class="btn btn--clear">Learn More</a>
+	</footer>
+	
+</div>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <article class="article__row article--white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/166429528"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2>Video: NACAC 2015 Recap</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem neque sequi cupiditate eveniet temporibus dolores fuga, nisi molestiae cumque numquam vitae distinctio assumenda eum officiis quos quam non impedit praesentium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi expedita animi nulla ducimus ratione doloremque illum magni esse perferendis voluptatum fuga nobis aperiam et distinctio facilis, omnis debitis enim non.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+
+  <div class="content-block__row">
+    
+    <div class="color-block color-block--wide">
+	<img class="color-block__image b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/main/color-block-bg-purple.jpg" alt="">
+	<div class="color-block__content">
+		<p class="color-block__feature join">
+			
+				Join NACAC
+			
+		</p>
+		<h2 class="color-block__title">Counselors: NACAC Value Proposition Text. Become a Member Today</h2>
+
+		
+			<p><a href="#" class="btn btn--clear">Apply for Membership</a></p>
+		
+
+		<p></p>
+	</div>
+</div>
+    
+    
+    <div class="color-block color-block--wide">
+	<img class="color-block__image b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/main/color-block-bg-green.jpg" alt="">
+	<div class="color-block__content">
+		<p class="color-block__feature help">
+			
+				Get Help
+			
+		</p>
+		<h2 class="color-block__title">Trouble Registering?</h2>
+
+		
+			
+    <div class="icon-list">
+      <div class="icon-item">
+        <svg class="icon-phone">
+          <use xlink:href="#icon-phone"></use>
+        </svg>
+        <span>1. Contact TRC at 1-800-922-8648.</span>
+      </div>
+      <div class="icon-item">
+        <svg class="icon-phone-tap">
+          <use xlink:href="#icon-phone-tap"></use>
+        </svg>
+        <span>2. Press item 2 for College Fair Automation</span>
+      </div>
+    </div>
+    
+		
+
+		<p></p>
+	</div>
+</div>
+
+  </div>
+
+
+   <footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 footer__logo">
+				<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/images/nacac_primary_logo_white.svg" alt="">
+			</div>
+			<div class="col-sm-5 footer__contact-list">
+				<h3>Contact Us</h3>
+				<p>
+					<a href="tel:18008226285">1(800)822-6285</a>
+				</p>
+				<p>
+					<a href="mailto:info@nacacnet.org">info@nacacnet.org</a>
+				</p>
+				<p>National Association for College Admission Counseling
+					<br/>1050 North Highland Street, Suite 400
+					<br/>Arlington, VA 22201</p>
+			</div>
+			<div class="col-sm-4 footer__callout">
+				<h3>Value Proposition</h3>
+				<p>Lorem ipsum dolor sit amet, voluptate consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<a href="#" class="btn btn--clear">Learn More</a>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+	
+	<div class="container footer-fair">
+		<div class="row">
+			<div class="col-sm-3">
+				<h3>Learn</h3>
+				<ul>
+					<li>
+						<a href="#">About NACAC College Fairs</a>
+					</li>
+					<li>
+						<a href="#">Guide to the College Admissions Process</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h3>Attend</h3>
+				<ul>
+					<li><a href="#">College Fair Finder</a></li>
+					<li><a href="#">National College Fairs</a></li>
+					<li><a href="#">Performing and Visual Arts Fairs</a></li>
+					<li><a href="#">STEM College and Career Fairs</a></li>
+					<li><a href="#">International Universities Fairs</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h3>Exhibit</h3>
+				<ul>
+					<li><a href="#">Why Should You Participate?</a></li>
+					<li><a href="#">Registration</a></li>
+					<li><a href="#">Guidelines</a></li>
+					<li><a href="#">Lead Retrieval Information</a></li>
+					<li><a href="#">Institutional Fee Waiver Program</a></li>
+					<li><a href="#">Terms and Policies</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h3>Support</h3>
+				<ul>
+					<li><a href="#">Sponsorship Opportunities</a></li>
+					<li><a href="#">Supporters</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr>
+	
+
+	<div class="container footer__utility">
+		<ul>
+			<li>
+				<a href="#">Login</a>
+			</li>
+			<li>
+				<a href="#">Join</a>
+			</li>
+			<li>
+				<a href="#">Contact</a>
+			</li>
+			<li>
+				<a href="#">Store</a>
+			</li>
+			<li>
+				<a href="#">Support NACAC</a>
+			</li>
+		</ul>
+	</div>
+	<div class="container footer__legal">
+		<ul>
+			<li>
+				<a href="#">Privacy Policy</a>
+			</li>
+			<li>
+				<a href="#">Terms of Use</a>
+			</li>
+			<li>
+				<a href="#">&copy; National Association for College Admission Counseling <script>var d=new Date,y=d.getFullYear();document.write(y);</script></a>
+			</li>
+		</ul>
+	</div>
+</footer>
+
+</main>
+
+
+	<script src="/javascripts/vendor/modernizr-3.3.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<!--<script>window.jQuery || document.write('<script src="javascripts/jquery.js"><\/script>')</script>-->
+	<script src="/javascripts/shared.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.5.2/blazy.min.js"></script>
+  <!-- NACAC needs to create an API key. This one is temporary only. -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgqZxGF9wxL5I0ITCpv8rqnuJqPMPOKCE" type="text/javascript"></script>
+	<script src="/javascripts/app-fair.js"></script>
+	
+<script src="/javascripts/interior.js"></script>
+
+</body>
+
+</html>
