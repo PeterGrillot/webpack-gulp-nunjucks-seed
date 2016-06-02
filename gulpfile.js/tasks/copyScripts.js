@@ -7,8 +7,6 @@ var paths = {
 }
 
 var copyScriptsFunction = function(){
-	gulp.src(paths.src + '/javascripts/data/**/*')
-	.pipe(gulp.dest(paths.dest +'/javascripts/data'));
 	gulp.src(paths.src + '/javascripts/vendor/**/*')
 	.pipe(gulp.dest(paths.dest +'/javascripts/vendor'));
 	//console.log('this is the copy vendor scripts function expression');
