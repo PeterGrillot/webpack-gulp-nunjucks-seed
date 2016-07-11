@@ -1,10 +1,23 @@
-
 {% extends '_layouts/main-application.html' %}
+{% set page = {title:"App Seed | Home"} %}
 
 {% block content %}
 <main>
-	{% set colorBlock = { className: 'color-block--wide', heading: "College Fairs"} %}
-		
+	<div class="container">
+		<div class="row">
+			<h1>Hello!</h1>
+			<p>Here we can set up blocks along with cool variables. You could do column width, background colors, class names you name it, be creative!</p>
+			{% set block = { heading: "This should have a button", button: true} %}
+			{% include "_components/block.html" %}
+
+			{% set block = { heading: "This should <b>not</b> have a button", button: false} %}
+			{% include "_components/block.html" %}
+
+			{% set block = { heading: "This should have a different heading", button: true} %}
+			{% include "_components/block.html" %}
+		</div>
+	</div>
+	
 </main>
 {% endblock %}
 

@@ -16,7 +16,13 @@ module.exports = function(env) {
 
 	var webpackConfig = {
 		context: jsSrc,
-		plugins: [],
+		plugins: [
+			new webpack.DefinePlugin({
+				'process.env' : {
+					NODE_ENV: JSON.stringify(env)
+				}
+			})
+		],
 		resolve: {
 			root: jsSrc,
 			extensions: [''].concat(extensions)
