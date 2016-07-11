@@ -4,17 +4,16 @@
 
 // MINIFIED Vendor file should be copied over via copyScripts.js (it is by default)
 
-// USING production variables is simple
-// Burn after reading
-if(process.env.NODE_ENV === 'development'){
-	var dev_var = 'url/to/dev';
-	
-}
-if(process.env.NODE_ENV === 'production'){
-	var dev_var = 'url/to/prod';
-	
-}
-console.log(dev_var);
-
 // IMPORT all modules here. Keep lib and minified files out this file.
+// Except for the example below
 import 'modules/bLazySettings.js';
+
+
+// USING production variables is simple with the envVar function
+// Burn after reading
+import envVar from 'lib/envVar.js';
+
+var dev_var = envVar({production:'myProductionURL', development: 'myDevelopmentURL'});
+
+// Test using `$ gulp production` vs `$ gulp` in terminal
+console.log(dev_var);
