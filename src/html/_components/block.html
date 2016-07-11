@@ -1,0 +1,14 @@
+<div class="col-sm-4">
+	<header class="block__header">
+		<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://logo.clearbit.com/gulpjs.com">
+		{% if block.heading %}
+				<h2>{{ block.heading }}</h2>
+		{% endif %}
+	</header>
+	<p>Pellentesque habitant morbi tristiqueVestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+	{% if block.button == true %}
+	<footer class="block__footer">
+		<a href="#" class="btn btn-primary">Learn More</a>
+	</footer>
+	{% endif %}
+</div>
