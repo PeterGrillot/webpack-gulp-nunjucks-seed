@@ -2,19 +2,24 @@
 {% set page = {title:"App Seed | Home"} %}
 
 {% block content %}
-<main>
+<main id="mainBg">
 	<div class="container">
+		<h1>CURSEWORDS</h1>
+		<h2><a href="">Better Luck Next Time</a></h2>
+		<a href="https://twitter.com/CurseWordsBand" target="_blank"><i class="ion-social-twitter"></i></a>
+		<a href="https://www.facebook.com/DontSayCurseWords" target="_blank"><i class="ion-social-facebook"></i></a>
+		<a href="http://instagram.com/curse_words" target="_blank"><i class="ion-social-instagramm"></i></a>
+		<a href="http://dontsaycursewords.bandcamp.com/" target="_blank"><i class="ion-play-circled"></i></a>
+		<a href="javascript:window.location.href = 'mailto:' + ['dontsaycursewords','gmail.com'].join('@')" target="_blank"><i class="ion-email"></i></a>
 		<div class="row">
-			<h1>Hello!</h1>
-			<p>Here we can set up blocks along with cool variables. You could do column width, background colors, class names you name it, be creative!</p>
-			{% set block = { heading: "This should have a button", button: true} %}
-			{% include "_components/block.html" %}
-
-			{% set block = { heading: "This should <b>not</b> have a button", button: false} %}
-			{% include "_components/block.html" %}
-
-			{% set block = { heading: "This should have a different heading", button: true} %}
-			{% include "_components/block.html" %}
+			<div class="parallax">
+				<div class="parallax__layer"></div>
+				<div class="parallax__layer"></div>
+				<div class="parallax__layer"></div>
+			</div>
+			<h2>Shows</h2>
+			<div id="google_doc_list"></div>
+			{% include "_components/tweets.html" %}
 		</div>
 	</div>
 	

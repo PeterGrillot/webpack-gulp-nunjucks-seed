@@ -1,0 +1,108 @@
+html{
+	font-size: 10px;
+}
+body{
+	background-color: #8a3183;
+	font-size: 2rem;
+	color:white;
+	font-family: "Open Sans", sans;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: "Stint Ultra Condensed", serif;
+	font-weight: normal;
+}
+a{
+	color: #9198ff;
+	transition: all 400ms ease-in;
+	&:hover{
+		color: white;
+		cursor: pointer;
+		transition: all 400ms ease-in;
+	}
+}
+main {
+  background: url("../images/BlurPurp.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container{
+	max-width: 72rem;
+    margin: auto;
+    padding: 4rem;
+}
+h1{
+	font-size: 10rem;
+	color: #9198ff;
+	text-align: center;
+}
+iframe{
+	.timeline-Widget{
+		background-color:transparent !important;
+	}
+}
+// Ignore
+.parallax{
+	position: relative;
+	height: 100vh;
+	width:100%;
+}
+.parallax__layer{
+	width:60rem;
+	height:60rem;
+	background: url("../images/Spaceman.png") no-repeat center center;
+	left: 50%;
+	margin-left: -30rem;
+	position:absolute;
+	z-index:2;
+	top:0;
+	margin-top:50vh;
+	color: white;
+}
+.parallax__layer:nth-child(2){
+	opacity: 0.4;
+	z-index:1;
+}
+.parallax__layer:nth-child(3){
+	opacity: 0.2;
+	z-index:0;
+}
+/*
+██████╗ ██╗  ██╗ ██████╗ ███╗   ██╗███████╗
+██╔══██╗██║  ██║██╔═══██╗████╗  ██║██╔════╝
+██████╔╝███████║██║   ██║██╔██╗ ██║█████╗  
+██╔═══╝ ██╔══██║██║   ██║██║╚██╗██║██╔══╝  
+██║     ██║  ██║╚██████╔╝██║ ╚████║███████╗
+╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+*/
+
+@include break(max, $screen-sm-max) {
+	.parallax__layer{
+		width:32rem;
+		height:32rem;
+		left: 0;
+		margin: 0;
+		background-size: contain;
+	}
+}
+
+
+/*
+██████╗ ███████╗███████╗██╗  ██╗████████╗ ██████╗ ██████╗ 
+██╔══██╗██╔════╝██╔════╝██║ ██╔╝╚══██╔══╝██╔═══██╗██╔══██╗
+██║  ██║█████╗  ███████╗█████╔╝    ██║   ██║   ██║██████╔╝
+██║  ██║██╔══╝  ╚════██║██╔═██╗    ██║   ██║   ██║██╔═══╝ 
+██████╔╝███████╗███████║██║  ██╗   ██║   ╚██████╔╝██║     
+╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝     
+														  
+*/
+
+@include break(min, $screen-md-min) {
+	
+}
