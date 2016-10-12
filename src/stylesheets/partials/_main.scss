@@ -1,3 +1,7 @@
+$purple: #9198ff;
+$light-purple: #FF6BD1;
+$orange: #FFCF64;
+
 html{
 	font-size: 10px;
 }
@@ -6,6 +10,7 @@ body{
 	font-size: 2rem;
 	color:white;
 	font-family: "Open Sans", sans;
+	color: white;
 }
 h1,
 h2,
@@ -13,11 +18,11 @@ h3,
 h4,
 h5,
 h6{
-	font-family: "Stint Ultra Condensed", serif;
+	font-family: "Nova Flat", serif;
 	font-weight: normal;
 }
 a{
-	color: #9198ff;
+	color: $purple;
 	transition: all 400ms ease-in;
 	&:hover{
 		color: white;
@@ -39,8 +44,46 @@ main {
 }
 h1{
 	font-size: 10rem;
-	color: #9198ff;
+	color: $light-purple;
 	text-align: center;
+	&.big-guy{
+		margin-bottom: -4.4rem;
+		position: relative;
+		z-index: 2;
+	}
+}
+.underline{
+	color: white;
+	position: relative;
+	padding: 2rem;
+	z-index: 1;
+	&:before{
+		content: "";
+		position: absolute;
+		top:0;
+		bottom:0;
+		right:0;
+		left:0;
+		height: calc(100% + 2rem);
+		width: calc(100% + 2rem);
+		background: $purple;	
+		
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffcf64+0,f2470e+100 */
+background: #ffcf64; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffcf64 0%, #f2470e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffcf64 0%,#f2470e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffcf64 0%,#f2470e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcf64', endColorstr='#f2470e',GradientType=0 ); /* IE6-9 */
+
+		transform: skew(20deg);
+		z-index: -1;
+	}
+	a{
+		color: white;
+		&:hover{
+			text-decoration: none;
+		}
+	}
 }
 iframe{
 	.timeline-Widget{
@@ -89,6 +132,9 @@ iframe{
 		left: 0;
 		margin: 0;
 		background-size: contain;
+	}
+	h1{
+		font-size: 5rem;
 	}
 }
 
