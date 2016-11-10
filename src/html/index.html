@@ -1,33 +1,29 @@
-{% extends '_layouts/main-application.html' %}
-{% set page = {title:"App Seed | Home"} %}
-
-{% block content %}
+{% extends '_layouts/main-application.html' %} {% set page = {title:"App Seed | Home"} %} {% block content %}
 <main id="mainBg">
-	<div class="container">
-		<h1 class="big-guy">CURSEWORDS</h1>
-		<div class="underline">
-			<h2 ><a href="http://dontsaycursewords.bandcamp.com/album/better-luck-next-time">Better Luck Next Time</a></h2>
-			<a href="https://twitter.com/CurseWordsBand" target="_blank"><i class="ion-social-twitter"></i></a>
-			<a href="https://www.facebook.com/DontSayCurseWords" target="_blank"><i class="ion-social-facebook"></i></a>
-			<a href="http://instagram.com/curse_words" target="_blank"><i class="ion-social-instagramm"></i></a>
-			<a href="http://dontsaycursewords.bandcamp.com/" target="_blank"><i class="ion-play-circled"></i></a>
-			<a href="javascript:window.location.href = 'mailto:' + ['dontsaycursewords','gmail.com'].join('@')" target="_blank"><i class="ion-email"></i></a>
-		</div>
-		<div class="row">
-			<div class="parallax">
-				<div class="parallax__layer"></div>
-				<div class="parallax__layer"></div>
-				<div class="parallax__layer"></div>
-			</div>
-			<h2>Shows</h2>
-			<div id="google_doc_list"></div>
-			{% include "_components/tweets.html" %}
-		</div>
-	</div>
-	
+    <div class="container">
+        <span class="links">
+	        <a href="https://twitter.com/CurseWordsBand" target="_blank"><i class="ion-social-twitter"></i></a>
+	        <a href="https://www.facebook.com/DontSayCurseWords" target="_blank"><i class="ion-social-facebook"></i></a>
+	        <a href="http://instagram.com/curse_words" target="_blank"><i class="ion-social-instagram"></i></a>
+	        <a href="http://dontsaycursewords.bandcamp.com/" target="_blank"><i class="ion-play"></i></a>
+	        <a href="javascript:window.location.href = 'mailto:' + ['dontsaycursewords','gmail.com'].join('@')" target="_blank"><i class="ion-email"></i></a>
+	    </span>
+        <h1 class="big-guy">CURSEWORDS</h1>
+        <div class="underline">
+            <h2><a href="http://dontsaycursewords.bandcamp.com/album/better-luck-next-time">Better Luck Next Time</a></h2>
+        </div>
+        <h2>Shows</h2>
+        <div id="google_doc_list" ></div>
+        <div class="row">
+            <div class="parallax">
+                <div class="parallax__layer"></div>
+                <div class="parallax__layer"></div>
+                <div class="parallax__layer"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+    	lol..dork
+    </footer>
 </main>
-{% endblock %}
-
-{% block javascript %}
-{% endblock %}
-
+{% endblock %} {% block javascript %} {% endblock %}

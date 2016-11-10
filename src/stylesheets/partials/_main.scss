@@ -32,20 +32,17 @@ a{
 }
 main {
   background: url("../images/BlurPurp.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 .container{
 	max-width: 72rem;
     margin: auto;
-    padding: 4rem;
 }
 h1{
 	font-size: 10rem;
 	color: $light-purple;
 	text-align: center;
+	text-shadow: 0 0 24px rgba(255,255,255,.6);
 	&.big-guy{
 		margin-bottom: -4.4rem;
 		position: relative;
@@ -57,32 +54,27 @@ h1{
 	position: relative;
 	padding: 2rem;
 	z-index: 1;
-	&:before{
-		content: "";
-		position: absolute;
-		top:0;
-		bottom:0;
-		right:0;
-		left:0;
-		height: calc(100% + 2rem);
-		width: calc(100% + 2rem);
-		background: $purple;	
-		
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffcf64+0,f2470e+100 */
-background: #ffcf64; /* Old browsers */
-background: -moz-linear-gradient(top,  #ffcf64 0%, #f2470e 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #ffcf64 0%,#f2470e 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #ffcf64 0%,#f2470e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcf64', endColorstr='#f2470e',GradientType=0 ); /* IE6-9 */
-
-		transform: skew(20deg);
-		z-index: -1;
-	}
+	text-align: center;
 	a{
-		color: white;
+		text-decoration: none;
+		font-size: 5.6rem;
+		color:#3c2f63;
 		&:hover{
 			text-decoration: none;
 		}
+	}
+	span.big-shadow{
+		margin-top: 17rem;
+		transform: rotateX(180deg) skew(-40deg);
+		display: block;
+		font-size: 5.6rem;
+		margin-left: 4rem;
+		margin-bottom: -13rem;
+		opacity: .6;
+		filter: blur(4px);
+	}
+	i{
+		margin: 0 4rem;
 	}
 }
 iframe{
@@ -93,7 +85,7 @@ iframe{
 // Ignore
 .parallax{
 	position: relative;
-	height: 100vh;
+	height: 200vh;
 	width:100%;
 }
 .parallax__layer{
@@ -116,6 +108,21 @@ iframe{
 	opacity: 0.2;
 	z-index:0;
 }
+.links{
+	text-align: center;
+	display: block;
+	padding-top:2rem;
+	a{
+		padding: 1rem;
+	}
+}
+
+footer{
+	position: absolute;
+	bottom: -230vh;
+	width: 100%;
+	text-align: center;
+}
 /*
 ██████╗ ██╗  ██╗ ██████╗ ███╗   ██╗███████╗
 ██╔══██╗██║  ██║██╔═══██╗████╗  ██║██╔════╝
@@ -127,14 +134,31 @@ iframe{
 
 @include break(max, $screen-sm-max) {
 	.parallax__layer{
-		width:32rem;
-		height:32rem;
-		left: 0;
-		margin: 0;
+		width: 32rem;
+		height: 32rem;
+		left: 50%;
+		margin-left: -16rem;
 		background-size: contain;
 	}
 	h1{
-		font-size: 5rem;
+		font-size: 12.2vw;
+		&.big-shadow{
+			display: none;
+		}
+	}
+	.underline a{
+		font-size: 8vw;
+	}
+	.list{
+		padding: 1rem 3rem;
+		background: rgba(60, 47, 99, 0.45);
+		border-top: 1px solid rgba(221, 221, 221, 0.57);
+		&:last-child{
+			border-top: 1px solid rgba(221, 221, 221, 0.57);
+		}
+	}
+	h2{
+		text-align: center;
 	}
 }
 
@@ -150,5 +174,7 @@ iframe{
 */
 
 @include break(min, $screen-md-min) {
-	
+	.links a{
+		font-size: 3rem;
+	}	
 }
