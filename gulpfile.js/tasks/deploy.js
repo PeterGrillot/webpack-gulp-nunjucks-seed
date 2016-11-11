@@ -21,13 +21,13 @@ var deployTask = function() {
       emptyDirectories: true,
       recursive: true,
       clean: true,
-      exclude: [],
+      exclude: ['.git*','node_modules'],
     };
     
     rsyncConf.root = 'public/';
-    rsyncConf.hostname = '45.55.48.35'; // hostname
+    rsyncConf.hostname = '104.131.160.160'; // hostname
     rsyncConf.username = 'root'; // ssh username
-    rsyncConf.destination = '/var/www/html/'; // path where uploaded files go
+    rsyncConf.destination = '/var/www/html/dontsaycursewords.com/'; // path where uploaded files go
 
     // Use gulp-rsync to sync the files 
     return gulp.src(rsyncPaths)
