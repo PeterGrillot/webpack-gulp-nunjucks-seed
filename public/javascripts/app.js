@@ -90,10 +90,11 @@ webpackJsonp([0,1],[
 			if (request.status >= 200 && request.status < 400) {
 				// Success!
 				var data = JSON.parse(request.responseText);
+				document.getElementById('js-loader').remove();
 				for (var i = 0; i < data.feed.entry.length; i++) {
-					var list = document.getElementById('google_doc_list');
+					var list = document.getElementById('js-google_doc_list');
 					var entry = data.feed.entry[i];
-					list.innerHTML = list.innerHTML + '<div class="list"><p><a href="' + entry.gsx$url.$t + '">' + entry.gsx$roster.$t + '</a></p><p>' + entry.gsx$date.$t + ' - ' + entry.gsx$venue.$t + ' - ' + entry.gsx$location.$t + '</p></div>';
+					list.innerHTML = list.innerHTML + ('<div class="list">\n\t\t\t\t\t\t<p><a href="' + entry.gsx$url.$t + '">' + entry.gsx$roster.$t + '</a></p>\n\t\t\t\t\t\t<p>' + entry.gsx$date.$t + ' - ' + entry.gsx$location.$t + '</p>\n\t\t\t\t\t</div>');
 	
 					// data.feed.entry[i].gsx$date
 				}

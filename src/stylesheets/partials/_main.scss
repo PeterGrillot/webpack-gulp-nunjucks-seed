@@ -1,12 +1,16 @@
 $purple: #9198ff;
 $light-purple: #FF6BD1;
+$medium-purple: #8a3183;
+$dark-purple: #3c2f63;
 $orange: #FFCF64;
+$green: #5ecaa4;
+$transl-purple: rgba(228, 219, 255, 0.17);
 
 html{
 	font-size: 10px;
 }
 body{
-	background-color: #8a3183;
+	background-color: $medium-purple;
 	font-size: 2rem;
 	color:white;
 	font-family: "Open Sans", sans;
@@ -22,12 +26,20 @@ h6{
 	font-weight: normal;
 }
 a{
-	color: $purple;
+	color: $dark-purple;
 	transition: all 400ms ease-in;
 	&:hover{
-		color: white;
+		color: $green;
 		cursor: pointer;
 		transition: all 400ms ease-in;
+	}
+}
+.links{
+	text-align: center;
+	display: block;
+	padding-top:2rem;
+	a{
+		padding: 1rem;
 	}
 }
 main {
@@ -40,7 +52,7 @@ main {
 }
 h1{
 	font-size: 10rem;
-	color: $light-purple;
+	color: $green;
 	text-align: center;
 	text-shadow: 0 0 24px rgba(255,255,255,.6);
 	&.big-guy{
@@ -58,7 +70,7 @@ h1{
 	a{
 		text-decoration: none;
 		font-size: 5.6rem;
-		color:#3c2f63;
+		color:$dark-purple;
 		&:hover{
 			text-decoration: none;
 		}
@@ -108,14 +120,7 @@ iframe{
 	opacity: 0.2;
 	z-index:0;
 }
-.links{
-	text-align: center;
-	display: block;
-	padding-top:2rem;
-	a{
-		padding: 1rem;
-	}
-}
+
 
 footer{
 	position: absolute;
@@ -140,6 +145,9 @@ footer{
 		margin-left: -16rem;
 		background-size: contain;
 	}
+	.links a{
+		font-size: 4rem;
+	}
 	h1{
 		font-size: 12.2vw;
 		&.big-shadow{
@@ -151,7 +159,7 @@ footer{
 	}
 	.list{
 		padding: 1rem 3rem;
-		background: rgba(60, 47, 99, 0.45);
+		background: $transl-purple;
 		border-top: 1px solid rgba(221, 221, 221, 0.57);
 		&:last-child{
 			border-top: 1px solid rgba(221, 221, 221, 0.57);
